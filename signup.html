@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Fut Pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+</head>
+
+<body>
+
+    <!-- BEGIN OF OPTIONS NAVBAR -->
+    <nav class="navbarWrapper">
+
+        <nav class="navBackground">
+            <nav class="optionsBarCore">
+                <div class="consoleOption">
+                    <div id="xboxLogoDiv">
+                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
+                    </div>
+                    <div id="ps4LogoDiv">
+                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
+                    </div>
+                </div>
+                <div class="rightSideOptions">
+                    <div class="socialMidiaOptions">
+                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
+                    </div>
+                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                        </button>
+                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
+                        </div>
+                    </div>
+
+                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PT
+                        </button>
+                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item languageSelec" href="#">ENG</a>
+                        </div>
+                    </div>
+            </nav>
+        </nav>
+
+
+        <!-- END OF OPTIONS NAVBAR -->
+
+        <div class="mainNavbarBackground">
+            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img class="navbarLogo"
+                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CAMPEONATOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">EQUIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">RANKING</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="mainGreenButton">LOGIN</button>
+            </nav>
+        </div>
+    </nav>
+    <!-- END OF MAIN NAVBAR -->
+
+    <!-- CRIESUACONTA START-->
+    <div class="cadastroBody">
+        <div class="fixNavbarPosition"></div>
+        <div class="crieSuaContaTitleContainer">
+            <p class="crieSuaConta">CRIE SUA CONTA</p>
+            <p class="preenchaOsDados">Preencha os dados abaixo para criar a sua conta.</p>
+        </div>
+        <form action="#" class="cadastroForm">
+            <div class="informacoesPessoaiscontainer">
+                <p class="informacoesPessoais">Informações Pessoais</p>
+                <div class="profilePhotoContainer">
+                    <div class="profilePhotoWrapper">
+
+                    </div>
+                    <div class="selecionePhotoContainer">
+                        <p class="label imagemDePerfil">Imagem de Perfil *</p>
+                        <div class="selecioneImagemWrapper">
+                            <input class="input selecioneImagemInput" type="text">
+                            <button class="mainGreenButton procurar">PROCURAR</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="label NomeCompleto">Nome completo *</p>
+                <input class="input nomeCompleto" type="text">
+
+                <div class="cpfGeneroNascWrapper">
+                    <div class="cpfInputWrapper">
+                        <p class="label cpf">CPF *</p>
+                        <input class="input cpfInput" type="text">
+                    </div>
+                    <div class="generoInputWrapper">
+                        <p class="label genero">Gênero *</p>
+                        <input class="input generoInput" type="text">
+                    </div>
+                    <div class="dataNascInputWrapper">
+                        <p class="label dataNasc">Data Nascimento *</p>
+                        <input class="input dataNascInput" type="text">
+                    </div>
+                </div>
+                <p class="label email">E-mail *</p>
+                <input class="input emailInput" type="text">
+
+                <p class="label confirmarEmail">Confirmar E-mail *</p>
+                <input type="text" class="input confirmarEmailInput">
+
+
+                <p class="label telefoneCelular">Telefone Celular *</p>
+                <div class="telefoneCelularWrapper">
+                    <input type="text" class="input dddInput">
+                    <input type="text" class="input numeroInput">
+                </div>
+            </div>
+
+            <div class="enderecoContainer">
+                <p class="enderecoTitle">Endereço</p>
+                <p class="label cep">CEP *</p>
+                <input type="text" class="input cepInput">
+
+                <div class="enderecoWrapper">
+                    <div class="endercoWrapperLabel">  
+                        <p class="label endereco">Endereço</p>
+                        <input type="text" class="input enderecoInput">
+                    </div> 
+                    <div class="numeroCasaWrapper">   
+                        <p class="label numeroCasa">Número</p>
+                        <input type="text" class="input numeroCasaInput">
+                    </div> 
+                </div>
+
+                <div class="complementoWarapper">
+                    <div class="complementoWrapperLabel">
+                        <p class="label complemeto">Complemento</p>
+                        <input type="text" class="input complementoInput">
+                    </div>
+                    <div class="bairroWrapper">
+                        <p class="label bairro">Bairro</p>
+                        <input type="text" class="input bairroInput">
+                    </div>
+                </div>
+
+                <div class="estadoWrapper">
+                    <div class="estadoWrapperLabel">
+                        <p class="label estado">Estado *</p>
+                        <input type="text" class="input estadoInput">
+                    </div>
+                    <div class="cidadeWrapper">
+                        <p class="label cidade">Cidade *</p>
+                        <input type="text" class="input cidadeInput">
+                    </div>
+                    <div class="paisWrapper">
+                        <p class="label pais">País *</p>
+                        <input type="text" class="input paisInput">
+                    </div>        
+                </div>
+                                
+                <div class="redesSociaisContainer">
+                    <p class="redesSociaisTitle">Redes Sociais</p>
+                    <p class="label redeSociaisLabel">Instagram</p>
+                    <input type="text" class="input redesSociaisInput">
+
+                    <p class="label redeSociaisLabel">Youtube</p>
+                    <input type="text" class="input redesSociaisInput">
+
+                    <p class="label redeSociaisLabel">Twitch.TV</p>
+                    <input type="text" class="input redesSociaisInput">
+
+                    <p class="label redeSociaisLabel">Twitter</p>
+                    <input type="text" class="input redesSociaisInput">
+
+                    <p class="label redeSociaisLabel">Facebook</p>
+                    <input type="text" class="input redesSociaisInput">
+                </div>
+
+                <div class="segurancaContainer">
+                    <p class="segurancaTitle">Segurança</p>
+
+                    <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
+                    <input type="password" class="input senhaInput">    
+                    <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1 número e 1 caractere</p>
+                    <p class="instrucoesSenha">especial.</p>
+
+                    <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
+                    <input type="password" class="input senhaInput">
+                    
+                    <div class="liEConcordoContainer">
+                        <input id="liEconcordo"type="checkbox">
+                        <label for="liEconcordo">Eu li e concordo com os Temos e Condições GlobalFutPro. *</label>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </form>   
+        <!-- <img class ="footballPlayerCadastro" src="./assets/images/football player cadastro.jpg" alt=""> -->
+    </div>
+
+
+    <!-- CRIESUACONTA END-->
+
+    <!-- FOOTER START-->
+
+    <div class="footerContainer">
+        <div class="footerWrapper">
+            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <div class="footerSobre GlobalFutProWrapper">
+                <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
+                <ul class="footerList">
+                    <li>Quem Somos</li>
+                    <li>Regulamento</li>
+                    <li>Pagamentos</li>
+                </ul>
+            </div>
+
+            <div class="footerSobre faleConosco">
+                <p class="footerTitle">FALE CONOSCO</p>
+                <ul class="footerList">
+                    <li>Contato</li>
+                    <li>+55 (11) 9 7671 6962</li>
+                    <li>globalfutpro@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSponsorsLogoContainer">
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyrightWrapper">
+            <p>Copyright © 2019 GLOBALFUTPRO</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

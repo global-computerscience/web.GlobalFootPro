@@ -1,0 +1,1094 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: baseline ;
+}
+
+.navbarWrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navBackground {
+    width: 100%;
+    height: 30px;
+    background-color: #031a28;
+}
+
+.optionsBarCore {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 30px;
+    width: 100vw;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.consoleOption {
+    display: flex;
+
+    height: 16px;
+}
+
+#xboxLogoDiv {
+    padding: 0 0 10px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+#xbox {
+    height: 16px;
+    margin-top: -11px;
+
+}
+
+#ps4LogoDiv {
+    padding: 0 10px;
+    height: 14px;
+    cursor: pointer;
+    margin-top: -10;
+}
+
+#ps4LogoDiv{
+    height: 100%;
+    background: #003791;
+}
+
+#ps4 {
+    height: 14px;
+}
+
+
+
+.rightSideOptions {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.socialMidiaOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78px;
+}
+
+.socialMidiaOptions img {
+    height: 14px;
+}
+
+
+.flagSelect,
+.languageSelect {
+    background-color: #031a28;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.flagSelect:focus {
+    box-shadow: none;
+}
+
+.selectFlag {
+    width: 20px;
+    height: ; 
+    /* VERIFICAR */
+    margin: 0 5px 0 0;
+}
+
+.superior {
+    background-color: #031a28;
+    padding: 0;
+    min-width: 160px;
+
+}
+
+.flagSelec,
+.languageSelec {
+    background-color: #031a28;
+    color: white;
+    padding: 4px 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+}
+
+.greenCircleSeparator1 {
+    height: 3px;
+    padding: 0px 6px 0 15px;
+}
+
+.greenCircleSeparator2 {
+    height: 3px;
+    padding: 0px 6px 0 6px;
+}
+
+￼ #languageItem {
+    min-width: 50px;
+}
+
+.language {
+    padding: 0;
+    background-color: #031a28;
+}
+
+
+
+.navBackground {
+    width: 100%;
+    background-color: #031a28;
+}
+
+.mainNavbarBackground {
+    width: 100%;
+    width: 100%;
+    background-color: #0C2737;
+    opacity: 0.9;
+}
+
+.mainNavbar {
+    max-width: 1300px;
+    height: 120px;
+    background-color: transparent;
+    margin: auto;
+    padding: 0 50px;
+
+}
+
+.navbarLogo {
+    height: 78px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navLink {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+
+    .navLink:hover,
+    .nav-link:active,
+    .nav-link:focus {
+        color: gray !important;
+    }
+
+}
+
+.mainGreenButton {
+    width: 100px;
+    height: 40px;
+    background-color: #1DA775;
+    border: none;
+    color: white;
+    border-radius: 2px;
+
+}
+
+#navbarSupportedContent {
+    margin: 0 auto;
+}
+
+.fixNavbarPosition {
+    height: 150px;
+    background-color: rgb(26, 26, 26);
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1200;
+    height: 480px;
+    background: url(../images/background\ image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentContainer {
+    margin: auto;
+    padding-left: 180px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    widows: 1300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+}
+
+.textPresentation {
+    width: 450px;
+}
+
+#aSuaComunidade {
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+    line-height: 20px;
+}
+
+#proClubs {
+    font-size: 76px;
+    font-weight: 600;
+    color: white;
+    line-height: 60px
+}
+
+.fifaLogo {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 140px;
+}
+
+#xboxHero {
+    width: 90px;
+}
+
+#ps4Hero {
+    width: 90px;
+}
+
+.footballPlayers {
+    position: relative;
+    margin-top: 190px;
+
+    height: 490px;
+    width: 680px;
+}
+
+.bottomTextHeroContainer {
+    width: 100%;
+    height: 50px;
+    padding: 0 180px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.bottomTextHero {
+    margin-top: 8px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.bottomTextHeroWrapper {
+    display: flex;
+    width: 950px;
+    margin: auto;
+}
+
+.posHeroContainer {
+    padding: 0 110px;
+}
+
+.posHeroWrapper {
+    width: 1100px;
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maiorCamp {
+    font-size: 38px;
+    color: #0C2737;
+}
+
+.globalFutLogo {
+    height: 340px;
+}
+
+.aboutProClubsContainer {
+    width: 960px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.aboutProClubs {
+    padding-left: 25px;
+}
+
+.campeonatoPresencial {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0C2737;
+}
+
+.proClubs {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.infoWrapper{
+    display: flex;
+}
+
+.dateContainer {
+    padding-top: 25px;
+}
+
+.date {
+    font-size: 28px;
+    font-weight: 600;
+    color: #DA622F;
+    line-height: 20px;
+}
+
+.month{
+    line-height: 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.liveArenaContainer{
+    margin-left: 45px;
+    margin-top: 23px;
+}
+
+.liveArena{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 600;
+    color: #DA622F;
+    line-height: 20px;
+}
+
+.adress, .adress2{
+    line-height: 5px;
+    font-weight: 600;
+
+}
+
+.features{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.inscrevaSe{
+    height: 48px;
+    width: 180px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.sponsorsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsorsLogos{
+   display: flex;
+   margin-top:30px;
+}
+
+.aceCampus{
+    height: 50px;   
+    padding: 0 10px;
+}
+
+.liveArena{
+    height: 30px;
+}
+
+.confrontos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 420px;
+}
+
+.confrontosVersusContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #003791;
+    padding-top: 20px;
+}
+
+
+.confrontosImageContainer{
+    background-image: url(../images/confrontosImage.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.confrontosTitle{
+    font-size: 36px;
+    color: white;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.ligaCopaContainer{
+    display: flex;
+}
+.confrontosLiga{
+    margin-right: 260px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.confrontosCopa{
+    text-decoration: underline;
+    color: #0B7BFF;;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: ;
+    /* VERIFICAR */
+}
+
+.confrontosLinhaBranca{
+    margin-top: 10px;
+    margin-left: -300px;
+}
+
+.confrontosInfo{
+    background-color: #002e77;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 260px;
+}
+
+.confrontoDateContainer{
+    display: flex;
+}
+
+.confrontoDate, .confrontoTime{
+    color: white;
+    font-size: 18px;    
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.confrontoDate{
+    margin-right: 30px;
+}
+
+.confrontoTeams, .Team1, .Team2{
+    display: flex;
+    align-items: center;
+}
+
+.confrontoTeams{
+    margin-top:30px;
+}
+
+.confrontoWhiteX{
+    width: 28px;
+    height: 28px;
+    margin: 0 20px;
+}
+
+.teamName, .teamName2{
+    color: white; 
+    font-weight: 600;
+    line-height: 8px;
+}
+
+.firstTeamLogo, .secondTeamLogo{
+    width: 125px;
+    height: 125px;
+}
+
+.team1NameContainer, .team2NameContainer{
+    width: 141px;
+}
+
+.team1NameContainer{
+    display: flex;
+    align-content: flex-end;
+}
+
+.confrontosVerTodos{
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #0B7BFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+.participateContainer{
+    width:100%;
+    background: #F3F3F3;
+}
+
+.participateContentWraper{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 200px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.participateIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.participateNumber{
+    font-size: 48px;
+    font-weight: 600;
+    color: #DA622F;
+    line-height: 30px;
+}
+
+.section1, .section2, .section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.participateDescription, .participateDescriptionBold{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.participateDescriptionBold{
+    font-weight: 600;
+}
+
+.participateLink{
+    font-size: 18px;
+    font-weight: 600;
+    color:  #1DA775;
+    margin-top: 15px;
+}
+
+.proClubsVideoContainer{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F3F3;
+}
+
+.proClubsVideoWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.proClubsVideoTitleWrapper{
+    display:flex;
+}
+
+.voceSabe{
+    font-size: 40px;
+    color: #0C2737;
+    line-height: 10px;
+}
+
+.proClubsVideoTitle{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+.questionMark{
+    font-size: 150px;
+    color: #0C2737;
+    opacity: 0.5;
+    margin-left: 15px;
+    line-height: 75px;
+}
+
+.VideoWrapper{
+    width: 600px;
+}
+
+.footbalPlayerVideo{
+    height: 610px;
+}
+
+
+.subscribeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    background-image: url(../images/TaçaAzulBg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.subscribeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oProximoBolaDeOuro{
+    color: white;
+    font-size: 28px;
+}
+
+.subscribeGlobalFutProContainer{
+    display: flex;
+}
+
+.subscribeGlobalFutPro{
+    color:white;
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.subscribePro{
+    color:white;
+    font-size: 86px;
+    line-height: 50px;
+}
+
+.oBola{
+    height: 65px;
+    margin-top: -6px;
+}
+
+.podeSerVoce{
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.subscribeButton{
+    height: 48px;
+    width: 180px;
+    background: white;
+    border-radius: 2px;
+    color:#003791;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+
+}
+
+.destaquesContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaquesWrapper{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.nossosDestaques{
+    font-size: 56px;
+    font-weight: 600;
+    color: #031a28;
+    line-height: 80px;
+}
+
+.conhecaDestaques{
+    font-size: 28px;
+    color: grey;
+    line-height: 10px;
+}
+
+.destaquesCardsWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: 310px;
+    grid-column-gap: 26px;
+    margin-top: 50px;
+}
+
+.logoPs4Card{
+    height: 14px;
+    margin: 20px 15px;
+}
+
+.cardDestaque1{
+    background-image: url(../images/Bottom\ card\ ps4\ \ Woman.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardDestaque2{
+    background-image: url(../images/Bottom\ card\ ps4\ nike.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardDestaque3{
+    background-image: url(../images/Bottom\ card\ ps4\ Goalkeeper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardDestaque4{
+    background-image: url(../images/Bottom\ card\ ps4\ Football\ shoes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottomCardWrapper{
+    margin-top: 100px;
+}
+
+.cardPosicaoWrapper{
+    padding: 10px 10px;
+    height: 40px;
+    width: 100%;
+    background: #0C2737;
+    opacity: 0.6;
+   
+    margin-top: 50px;
+}
+
+.cardNomeJogadorWrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background: #0C2737;
+    height: 40px;
+   
+    color: white;
+}
+.cardNomeJogador{
+    width:135px;
+    padding: 10px 10px;
+}
+.cardPosicao{
+    position: relative;
+    top: 82px;
+    color: white;
+    font-size: 14px;
+    z-index: 999;
+    padding: 0 10px;
+}
+
+.cardJogadorNumberWrapper{
+    width: 60px;
+    color: white;
+    font-size: 18px;
+    background: #003791;
+    
+}
+
+.cardJogadorNumberWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px;
+    height: 40px;
+}
+
+.destaquesSocialIcons{
+    height: 150px;
+    background: #031a28;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 400px;
+    background: #031A28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    margin-top: 70px;
+}
+
+.bottomFutProLogo{
+    width: 104px;
+    height: 126.75px;
+}
+
+.footerTitle{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1DA775;
+}
+
+.footerList, .footerList li{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 35px;
+}
+.footerSponsorsLogoContainer{
+    width: 230px;
+}
+
+.copyrightWrapper p{
+    font-weight: 500;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+hr{
+    width:1000px;
+    border: 0.5px solid #3B3D3F;
+}
+
+/* PÁGINA CADASTRO --------------------------------------------------------------------------------------------*/
+
+.cadastroBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crieSuaContaTitleContainer{
+    margin-top: 50px;
+    width: 1000px;
+}
+
+.crieSuaConta{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.preenchaOsDados{
+    font-size: 18px;
+}
+
+.informacoesPessoaiscontainer{
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.informacoesPessoais{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.profilePhotoContainer{
+    display: flex;
+}
+
+.profilePhotoWrapper{
+    width: 60px;
+    height: 60px;
+    background-color: #1DA775;
+    border-radius: 100%;
+}
+
+.input{
+    background: #E0E0E0;
+    border-radius: 2px;
+    height: 40px;
+    border-style:solid;
+    border: none;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0px;
+}
+
+.selecionePhotoContainer{
+    margin-left: 10px;
+}
+
+.selecioneImagemInput{
+    width: 590px;
+}
+
+.procurar{
+    position: relative;
+    width: 110px;
+    left: -115px;
+}
+
+.NomeCompleto{
+    margin-top: 20px;
+}
+
+.nomeCompleto{
+    width: 660px;
+}
+
+.cpfGeneroNascWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 660px;
+}
+
+.cpfInput{
+    width: 320px;
+}
+
+.generoInput{
+    width: 150px;
+}
+
+.dataNascInput{
+    width: 150px;
+} 
+
+.email, .confirmarEmail{
+    margin-top: 30px;
+}
+
+.emailInput, .confirmarEmailInput{
+    width: 660px;
+}
+
+.telefoneCelular{
+    margin-top: 30px;
+}
+
+.telefoneCelularWrapper{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+.dddInput{
+    width:60px;
+}
+
+.numeroInput{
+    width: 240px;
+
+}
+
+.enderecoContainer{
+    margin-top: 40px;
+    width: 1000px;
+}
+
+.enderecoTitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cep{
+    margin-top: 20px;
+}
+
+.cepInput{
+    width: 320px;
+}
+
+.enderecoWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.enderecoInput{
+    width: 830px;
+}
+
+.numeroCasaInput{
+    width: 150px;
+}
+
+.complementoWarapper, .estadoWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;   
+}
+
+.complementoInput, .bairroInput{
+    width: 490px;
+}
+
+.estadoInput, .cidadeInput, .paisInput {
+    width: 320px;
+} 
+
+.redesSociaisContainer{
+    margin-top: 40px;
+}
+
+.redesSociaisTitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.redeSociaisLabel{
+    margin-top: 30px;
+}
+
+.redesSociaisInput{
+    width: 660px;
+}
+
+.segurancaTitle{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.crieUmaSenhaLabel{
+    margin-top: 20px;
+}
+
+.senhaInput{
+    width: 490px;
+    margin-bottom: 10px;
+}
+
+.instrucoesSenha{
+
+    font-size: 11px;
+    line-height: 2px;
+}
+
+.confirmeASenhaLabel{
+    margin-top: 30px;
+}
+
+.liEConcordoContainer{
+    margin-top: 80px;
+}
+.liEConcordoContainer{
+    font-size: 18px
+}
