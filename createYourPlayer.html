@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Fut Pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+</head>
+
+<body>
+
+    <!-- BEGIN OF OPTIONS NAVBAR -->
+    <nav class="navbarWrapper">
+
+        <nav class="navBackground">
+            <nav class="optionsBarCore">
+                <div class="consoleOption">
+                    <div id="xboxLogoDiv">
+                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
+                    </div>
+                    <div id="ps4LogoDiv">
+                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
+                    </div>
+                </div>
+                <div class="rightSideOptions">
+                    <div class="socialMidiaOptions">
+                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
+                    </div>
+                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                        </button>
+                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
+                        </div>
+                    </div>
+
+                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PT
+                        </button>
+                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item languageSelec" href="#">ENG</a>
+                        </div>
+                    </div>
+            </nav>
+        </nav>
+
+
+        <!-- END OF OPTIONS NAVBAR -->
+
+        <div class="mainNavbarBackground">
+            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
+                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CAMPEONATOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">EQUIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">RANKING</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
+            </nav>
+        </div>
+    </nav>
+    <!-- END OF MAIN NAVBAR -->
+
+    <div class="fixNavbarPosition"></div>
+    <div class="createYOurPlayerConatainer">
+        <div class="createYourPlayerWrapper">
+            <div class="createYourPlayerTopOfPageWrapper">
+                <div class="createYourPlayerPs4XboxWrapper">
+                    <p class="crieSeuJogador">CRIE SEU JOGADOR</p>
+                    <p class="preenchaOsDadosCrieJogador">Preencha os dados abaixo para criar seu jogador</p>
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <p class="subtitle">Escolha a Plataforma</p>
+                    </div>
+
+                    <div class="plataformaContainer">
+                        <div class="plataformaPs4Wrapper">
+                            <img class="createYourPlayerPS4Logo" src="./assets/images/ps4-logo-blue.png" alt="">
+                        </div>
+
+                        <div class="plataformaXboxWrapper">
+                            <img class="createYourPlayerXBOXLogo" src="./assets/images/XBOX-logo-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="createYourPlayerPS4XboxLabel">
+                        <p class="createYourPlayerPS4label">PS4</p>
+                        <p class="createYourPlayerXBoxlabel">XBOX</p>
+                    </div>
+                </div>
+                <div class="createYouPlayerTopImageWrapper">
+                    <img class="createYouPlayerTopImage" src="./assets/images/football-players-crie-seu-jogador.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="createYourPlayerDadosDoJogadorWrapper">
+                <div class="createYourPlayerSubtitleAndIconContainer">
+                    <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                    <p class="subtitle">Dados do Jogador</p>
+                </div>
+
+                <!-- entire form of this page, starts here-->
+                <form action="">
+                    <p class="label dadosDoJogadorLabel">Apelido *</p>
+                    <input class="input seuNomeNaPlataformaInput" type="text" class="input"
+                        id="seuNomeDentroDaPlataformaInput" placeholder="Seu nome dentro da Plataforma">
+
+                    <div class="createYourPlayerPSNinputWrapper">
+                        <div class="wrapper">
+                            <p class="label labelDisabled PSNlabel">PSN *</p>
+                            <!-- to enable this input, remove propertie disabled and inputDisabled class. Do it for label above too (remove labelDisabled class)-->
+                            <input disabled type="text" class="input inputDisabled PSNinput"
+                                id="createYourPlayerPSNinput">
+                        </div>
+                        <div class="wrapper">
+                            <p class="label labelDisabled GameTagLabel">Game Tag*</p>
+                            <!-- to enable this input, remove propertie disabled and inputDisabled class. Do it for label above too (remove labelDisabled class)-->
+                            <input disabled type="text" class="input inputDisabled PSNinput"
+                                id="createYourPlayerGametaginput">
+                        </div>
+                    </div>
+                    <p class="label jogaEmAlgumaEquipe">Joga em alguma esquipe? Escolha abaixo.</p>
+                    <select class="input createYourPlayerSelect" name="selecioneAEquipe" id="selecioneEquipeInput">
+                        <option value="">Selecionar equipe</option>
+                    </select>
+
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <p class="subtitle">Posição</p>
+                    </div>
+
+                    <p class="label subtitleDescriprion">Escolha a principal posição em que quer jogar *</p>
+
+                    <div class="crateYourPlayerRadioButttonsContainer">
+
+                        <div id="goleiro" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="goleiro" class="inputRadio">
+                            <p class="label">GOLEIRO</p>
+                        </div>
+
+                        <div id="lateralEsquerdo" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="lateralEsquerdo" class="inputRadio">
+                            <p class="label">LATERAL ESQUERDO</p>
+                        </div>
+
+                        <div id="lateralDireito" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="lateralDireito" class="inputRadio">
+                            <p class="label">LATERAL DIREITO</p>
+                        </div>
+
+                        <div id="zagueiroEsquerdo" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="zagueiroEsquerdo" class="inputRadio">
+                            <p class="label">ZAGUEIRO ESQUERDO</p>
+                        </div>
+
+                        <div id="zagueiroCentral" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="zagueiroCentral" class="inputRadio">
+                            <p class="label">ZAGUEIRO CENTRAL</p>
+                        </div>
+                        <div id="zagueiroDireito" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="zagueiroDireito" class="inputRadio">
+                            <p class="label">ZAGUEIRO DIREITO</p>
+                        </div>
+
+                        <div id="volante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="volante" class="inputRadio">
+                            <p class="label">VOLANTE</p>
+                        </div>
+
+                        <div id="meiaAtacante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="meiaAtacante" class="inputRadio">
+                            <p class="label">MEIA-ATACANTE</p>
+                        </div>
+
+                        <div id="meiaEsquerda" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="meiaEsquerda" class="inputRadio">
+                            <p class="label">MEIA-ESQUERDA</p>
+                        </div>
+
+                        <div id="meiaCentral" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="meiaCentral" class="inputRadio">
+                            <p class="label">MEIA-CENTRAL</p>
+                        </div>
+
+                        <div id="meiaDireita" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="meiaDireita" class="inputRadio">
+                            <p class="label">MEIA-DIREITA</p>
+                        </div>
+
+                        <div id="segundoAtacante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="segundoAtacante" class="inputRadio">
+                            <p class="label">SEGUNDO ATACANTE</p>
+                        </div>
+
+                        <div id="centroAvante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="centroAvante" class="inputRadio">
+                            <p class="label">CENTRO AVANTE</p>
+                        </div>
+
+                        <div id="pontaDireita" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="pontaEsquerda" class="inputRadio">
+                            <p class="label">PONTA ESQUERDA</p>
+                        </div>
+
+                        <div id="pontaEsquerda" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoPrimaria" value="pontaDireita" class="inputRadio">
+                            <p class="label">PONTA DIREITA</p>
+                        </div>
+                    </div>
+                    <div class="mesmoEmTodasPlataformasCheckBoxWrapper">
+                        <input id="mesmaPosicaoTodasPlataformasPrimaria" type="checkbox" checked>
+                        <span class="label"> Ocupar a mesma posição em todas as plataformas.</span>
+                    </div>
+
+
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <p class="subtitle">Uniforme</p>
+                    </div>
+
+                    <div class="createYourPlayerCamisaInfoInputsWrapper">
+                        <div class="wrapper">
+                            <p class="label">Número da camisa *</p>
+                            <input class="input numeroCamisaInput" type="number">
+                        </div>
+
+                        <div class="wrapper">
+                            <p class="label">Nome na camisa *</p>
+                            <input class="input nomeCamisaInput" type="text">
+                        </div>
+                    </div>
+
+                    <div class="mesmoEmTodasPlataformasCheckBoxWrapper">
+                        <input id="mesmoNumeroENomeTodasPlataformas" type="checkbox" checked>
+                        <span class="label"> Usar os mesmos números e nome em todas as plataformas.</span>
+                    </div>
+
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <p class="subtitle">Posição Secundária</p>
+                    </div>
+
+                    <p class="label subtitleDescriprion">Escolha outra posição em que você pode jogar *</p>
+
+                    <div class="crateYourPlayerRadioButttonsContainer">
+
+                        <div id="goleiro" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="goleiro" class="inputRadio">
+                            <p class="label">GOLEIRO</p>
+                        </div>
+
+                        <div id="lateralEsquerdo" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="lateralEsquerdo" class="inputRadio">
+                            <p class="label">LATERAL ESQUERDO</p>
+                        </div>
+
+                        <div id="lateralDireito" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="lateralDireito" class="inputRadio">
+                            <p class="label">LATERAL DIREITO</p>
+                        </div>
+
+                        <div id="zagueiroEsquerdo" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="zagueiroEsquerdo" class="inputRadio">
+                            <p class="label">ZAGUEIRO ESQUERDO</p>
+                        </div>
+
+                        <div id="zagueiroCentral" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="zagueiroCentral" class="inputRadio">
+                            <p class="label">ZAGUEIRO CENTRAL</p>
+                        </div>
+                        <div id="zagueiroDireito" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="zagueiroDireito" class="inputRadio">
+                            <p class="label">ZAGUEIRO DIREITO</p>
+                        </div>
+
+                        <div id="volante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="volante" class="inputRadio">
+                            <p class="label">VOLANTE</p>
+                        </div>
+
+                        <div id="meiaAtacante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="meiaAtacante" class="inputRadio">
+                            <p class="label">MEIA-ATACANTE</p>
+                        </div>
+
+                        <div id="meiaEsquerda" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="meiaEsquerda" class="inputRadio">
+                            <p class="label">MEIA-ESQUERDA</p>
+                        </div>
+
+                        <div id="meiaCentral" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="meiaCentral" class="inputRadio">
+                            <p class="label">MEIA-CENTRAL</p>
+                        </div>
+
+                        <div id="meiaDireita" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="meiaDireita" class="inputRadio">
+                            <p class="label">MEIA-DIREITA</p>
+                        </div>
+
+                        <div id="segundoAtacante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="segundoAtacante" class="inputRadio">
+                            <p class="label">SEGUNDO ATACANTE</p>
+                        </div>
+
+                        <div id="centroAvante" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="centroAvante" class="inputRadio">
+                            <p class="label">CENTRO AVANTE</p>
+                        </div>
+
+                        <div id="pontaDireita" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="pontaEsquerda" class="inputRadio">
+                            <p class="label">PONTA ESQUERDA</p>
+                        </div>
+
+                        <div id="pontaEsquerda" class="radioButtonsWrapper">
+                            <input type="radio" name="posicaoSecundaria" value="pontaDireita" class="inputRadio">
+                            <p class="label">PONTA DIREITA</p>
+                        </div>
+                    </div>
+
+                    <div class="mesmoEmTodasPlataformasCheckBoxWrapper">
+                        <input id="mesmaPosicaoTodasPlataformasSecundaria" type="checkbox" checked>
+                        <span class="label"> Ocupar a mesma posição em todas as plataformas</span>
+                    </div>
+
+                    <hr class="separator">
+
+                    <div class="createYourPlayerButtonsContainer">
+                        <button class="createYourPlayerLimparDadosButton">LIMPAR DADOS</button>
+                        <!--To enable this button just remove "disabled" propertie from button-->
+                        <button type="submit" class="createYourPlayerCriarJogadorButton" disabled>CRIAR JOGADOR</button>
+                    </div>
+                </form>
+
+                <hr class="separator">
+
+                <div class="socialMediaIconsContainer">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER START-->
+
+    <div class="footerContainer">
+        <div class="footerWrapper">
+            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <div class="footerSobre GlobalFutProWrapper">
+                <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
+                <ul class="footerList">
+                    <li>Quem Somos</li>
+                    <li>Regulamento</li>
+                    <li>Pagamentos</li>
+                </ul>
+            </div>
+
+            <div class="footerSobre faleConosco">
+                <p class="footerTitle">FALE CONOSCO</p>
+                <ul class="footerList">
+                    <li>Contato</li>
+                    <li>+55 (11) 9 7671 6962</li>
+                    <li>globalfutpro@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSponsorsLogoContainer">
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyrightWrapper">
+            <p>Copyright © 2019 GLOBALFUTPRO</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

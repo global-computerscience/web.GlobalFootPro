@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Fut Pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+</head>
+
+<body>
+
+    <!-- BEGIN OF OPTIONS NAVBAR -->
+    <nav class="navbarWrapper">
+
+        <nav class="navBackground">
+            <nav class="optionsBarCore">
+                <div class="consoleOption">
+                    <div id="xboxLogoDiv">
+                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
+                    </div>
+                    <div id="ps4LogoDivLoginDisableBgColor">
+                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
+                    </div>
+                </div>
+                <div class="rightSideOptions">
+                    <div class="socialMidiaOptions">
+                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
+                    </div>
+                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                        </button>
+                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
+                        </div>
+                    </div>
+
+                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PT
+                        </button>
+                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item languageSelec" href="#">ENG</a>
+                        </div>
+                    </div>
+            </nav>
+        </nav>
+
+
+        <!-- END OF OPTIONS NAVBAR -->
+
+        <div class="mainNavbarBackground">
+            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
+                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CAMPEONATOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">EQUIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="#">RANKING</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="mainGreenButton" disabled>LOGIN</button>
+            </nav>
+        </div>
+    </nav>
+    <!-- END OF MAIN NAVBAR -->
+    <div class="fixNavbarPosition"></div>
+    <div class="loginContainer">
+        <div class="loginWrapper">
+
+            <p class="loginTitle">LOGIN</p>
+            <form id="myForm" class="needs-validation" novalidate>
+
+                <input type="text" class="input userLoginInput form-control" required placeholder="Seu e-mail ou nome de usuário">
+                <div class="invalid-feedback">Por favor, escolha um nome de usuário.</div>
+
+                <input type="password" class="input passwordLoginInput form-control" required placeholder="Senha" aria-describedby="inputGroupPrepend">
+                <div class="invalid-feedback">
+                    Por favor, escolha um nome de usuário.
+                </div>
+                <button type="submit" class="mainGreenButton loginButton">ENTRAR</button>
+            </form>
+            <hr class="socialIconsDivision loginHr">
+            <p class="naoLembraSuaSenha">Não lembra sua senha ou usuário?</p>
+            <a href="#"><p class="cliqueAquipararecuperar">Clique aqui para recuperar seus dados de acesso.</p></a>
+            <div class="cliqueParaSeCadastrarWrapper">
+                <p class="aindaNaoTemAsuaConta">Ainda não tem a sua conta?</p>
+                <a href="./signup.html"><p class="cliqueParaSeCadastrar">Clique aqui para se cadastrar</p></a>
+            </div>
+        </div>
+    </div>    
+    
+   <hr class="socialIconsDivision">
+   <div class="socialMediaIconsContainer"></div>
+
+    <!-- FOOTER START-->
+
+    <div class="footerContainer">
+        <div class="footerWrapper">
+            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <div class="footerSobre GlobalFutProWrapper">
+                <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
+                <ul class="footerList">
+                    <li>Quem Somos</li>
+                    <li>Regulamento</li>
+                    <li>Pagamentos</li>
+                </ul>
+            </div>
+
+            <div class="footerSobre faleConosco">
+                <p class="footerTitle">FALE CONOSCO</p>
+                <ul class="footerList">
+                    <li>Contato</li>
+                    <li>+55 (11) 9 7671 6962</li>
+                    <li>globalfutpro@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSponsorsLogoContainer">
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyrightWrapper">
+            <p>Copyright © 2019 GLOBALFUTPRO</p>
+        </div>
+    </div>
+
+          
+    <script>
+    // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() { 
+            // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+            var forms = document.getElementsByClassName('needs-validation');
+            // Faz um loop neles e evita o envio
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+        })();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

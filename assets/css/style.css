@@ -3,13 +3,31 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-body {
+html{
+    background:#031A28;
+}
+body{
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
-img {
+img{
     vertical-align: baseline ;
+}
+
+.subtitleIcon{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    margin-left: -36px;
+
+}
+
+.flexWrapper{
+    display: flex;
+    align-items: center;
 }
 
 .navbarWrapper {
@@ -38,32 +56,30 @@ img {
 
 .consoleOption {
     display: flex;
-
-    height: 16px;
+    height: 100%;
+    align-items: center;
 }
 
 #xboxLogoDiv {
-    padding: 0 0 10px;
-    height: 16px;
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    height: 100%;
     cursor: pointer;
 }
 
 
 #xbox {
     height: 16px;
-    margin-top: -11px;
 
 }
 
 #ps4LogoDiv {
-    padding: 0 10px;
-    height: 14px;
-    cursor: pointer;
-    margin-top: -10;
-}
-
-#ps4LogoDiv{
+    display: flex;
+    align-items: center;
+    padding:0 10px;
     height: 100%;
+    cursor: pointer;
     background: #003791;
 }
 
@@ -106,8 +122,6 @@ img {
 
 .selectFlag {
     width: 20px;
-    height: ; 
-    /* VERIFICAR */
     margin: 0 5px 0 0;
 }
 
@@ -264,11 +278,12 @@ img {
 }
 
 #xboxHero {
-    width: 90px;
+    width: 80px;
+    margin-left:30px; 
 }
 
 #ps4Hero {
-    width: 90px;
+    width: 95px;
 }
 
 .footballPlayers {
@@ -460,8 +475,6 @@ img {
     color: #0B7BFF;;
     font-size: 24px;
     font-weight: 600;
-    opacity: ;
-    /* VERIFICAR */
 }
 
 .confrontosLinhaBranca{
@@ -707,7 +720,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .nossosDestaques{
@@ -815,12 +828,13 @@ img {
     height: 40px;
 }
 
-.destaquesSocialIcons{
-    height: 150px;
-    background: #031a28;
+.socialMediaIconsContainer{
+    height: 120px;
+    width: 1000px;
 }
 
 .footerContainer{
+
     width: 100%;
     height: 400px;
     background: #031A28;
@@ -867,9 +881,9 @@ img {
     margin-bottom: 30px;
 }
 
-hr{
+.socialIconsDivision{
     width:1000px;
-    border: 0.5px solid #3B3D3F;
+    border: 0.5px solid rgb(214, 212, 212);
 }
 
 /* PÁGINA CADASTRO --------------------------------------------------------------------------------------------*/
@@ -922,12 +936,21 @@ hr{
     height: 40px;
     border-style:solid;
     border: none;
+    padding-left: 10px; 
+}
+
+.inputDisabled{
+   opacity: 0.5; 
 }
 
 .label{
     font-weight: 500;
     font-size: 14px;
     line-height: 0px;
+}
+
+.labelDisabled{
+    opacity: 0.3   ;
 }
 
 .selecionePhotoContainer{
@@ -1091,4 +1114,497 @@ hr{
 }
 .liEConcordoContainer{
     font-size: 18px
+}
+
+
+/* PÁGINA LOGIN --------------------------------------------------------------------------------------------*/
+
+#ps4LogoDivLoginDisableBgColor{
+    background: none;
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mainGreenButton:disabled{
+    background-color: rgb(35, 94, 72)
+}
+
+.loginContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.loginTitle{
+    width: 100%;
+    margin: 30px 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.userLoginInput{
+    width: 360px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.passwordLoginInput{
+    width: 360px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.loginButton{
+    width: 100%;
+    height: 48px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.loginHr{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.naoLembraSuaSenha{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.cliqueAquipararecuperar{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 0;
+    text-decoration: underline;
+    color: #1DA775;
+    margin-bottom: 50px;
+}
+
+.cliqueParaSeCadastrarWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    border: 2px solid #DA622F;
+    border-radius: 1px;
+}
+
+.aindaNaoTemAsuaConta{
+    font-size: 14px;
+    line-height: 5px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.cliqueParaSeCadastrar{
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+    line-height: 10px;
+    color: #DA622F;
+}
+
+
+
+/* PÁGINA EQUIPES --------------------------------------------------------------------------------------------*/
+
+.teamsHeroContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/equipesHeroImage.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teamsHeroWrapper{
+    width: 1000px;
+}
+
+.teamsHomeTitle{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+    line-height: 0;
+
+}
+
+.teamsHeroTitle{
+    font-size: 64px;
+    font-weight: 600;
+    color: white;
+    line-height: 60px;
+    margin-left: -5px;
+}
+
+.ps4LogoTeamsHero{
+    width: 240px;
+    margin-left: -15px;
+}
+
+.teamsRankingContainer{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.top3Container{
+    width: 1000px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamsTop3Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 320px;
+    height: 360px;
+    padding: 20px 40px;
+}
+
+.teamsFirstPlace{
+    background-color: #D2BA7E;
+}
+
+.rankPositionAndNameWrapper{
+    display: flex;
+    width: 260px;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.position{
+    font-size: 26px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.blackPipeSeparator{
+    color: black;
+    margin-right: 15px;
+
+}
+
+.teamsRankingTeamName{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.teamPointsWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.teamPoints, .teamsPontosText{
+    margin: 0 5px 0 0;
+    font-size: 16px;
+}
+
+
+/* PÁGINA CRIE SEU JOGADOR --------------------------------------------------------------------------------------------*/
+
+.createYOurPlayerConatainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.createYourPlayerWrapper{
+    width:1000px;
+    justify-content: center;
+}
+
+.createYourPlayerTopOfPageWrapper{
+    display: flex;
+    height: 334px;
+    ;
+}
+
+.createYourPlayerPs4XboxWrapper{
+    width: 500px;
+}
+
+.crieSeuJogador{
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.preenchaOsDadosCrieJogador{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.createYourPlayerSubtitleAndIconContainer{
+    display: flex;
+    align-items: center;
+}
+
+.subtitle{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.plataformaContainer{
+    display: flex;
+    margin-top: 15px;
+}
+
+.plataformaPs4Wrapper{
+    width: 184px;
+    height: 70px;
+    border: 4px solid #003791;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.createYourPlayerPS4Logo{
+    width: 120px;
+}
+
+.plataformaXboxWrapper{
+    width: 184px;
+    height: 70px;
+    border: 4px solid #107C11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createYourPlayerXBOXLogo{
+    width: 120px;
+}
+
+.createYourPlayerPS4XboxLabel{
+    display: flex;
+    justify-content: space-around;
+    width: 388px;
+}
+
+.createYouPlayerTopImageWrapper{
+    width: 500px;
+}
+
+.createYouPlayerTopImage{
+    width: 634px;
+    height: 434px;
+}
+
+.dadosDoJogadorLabel{
+    margin-top: 30px;
+}
+
+.seuNomeNaPlataformaInput{
+    width: 660px;
+}
+
+.createYourPlayerPSNinputWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin-top: 30px;
+}
+
+.PSNinput{
+    width:320px;
+}
+
+.jogaEmAlgumaEquipe{
+    margin-top: 30px;
+}
+
+.createYourPlayerSelect{
+    width: 660px;
+}
+
+#selecioneEquipeInput{
+    margin-bottom: 30px;
+}
+
+.subtitleDescriprion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mesmaPosicaoTodasPlataformasPrimaria, .mesmoNumeroENomeTodasPlataformas, .mesmaPosicaoTodasPlataformasSecundaria{
+
+}
+ 
+/* RADIO BUTTONS STYLE START ----------------------------------------------------*/
+
+.crateYourPlayerRadioButttonsContainer{
+    width: 1000px;
+    height:  650px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(9, 70px);
+    justify-content: center;
+    grid-column-gap: 150px; 
+    grid-template-areas: ". goleiro ."
+                         "lateralE . lateralD"
+                         "zagueiroE zagueiroC zagueiroD"
+                         ". volante ."
+                         ".  meiaAtacante ."
+                         "meiaE meiaC meiaD"
+                         ". segundoAtacante ."
+                         ".   centroAvante ."
+                         "pontaE . pontaD";
+}
+
+.inputRadio{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.radioButtonsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#goleiro{
+    grid-area: goleiro;
+}
+
+#lateralDireito{
+    grid-area: lateralD;
+}
+
+#lateralEsquerdo{
+    grid-area: lateralE;
+}
+
+#zagueiroEsquerdo{
+    grid-area: zagueiroE;
+}
+
+#zagueiroCentral{
+    grid-area: zagueiroC;
+}
+
+#zagueiroDireito{
+    grid-area: zagueiroD;
+}
+
+#volante{
+    grid-area: volante;
+}
+
+#meiaAtacante{
+    grid-area: meiaAtacante;
+}
+
+#meiaEsquerda{
+    grid-area: meiaE;
+}
+
+#meiaCentral{
+    grid-area: meiaC;
+}
+
+#meiaDireita{
+    grid-area: meiaD
+}
+
+#segundoAtacante{
+    grid-area: segundoAtacante;
+}
+
+#centroAvante{
+    grid-area: centroAvante;
+}
+
+#pontaEsquerda{
+    grid-area: pontaE;
+}
+
+#pontaDireita{
+    grid-area: pontaD;
+}
+
+/* RADIO BUTTONS STYLE END----------------------------------------------------*/
+
+#mesmoNomeTodasPlataformas{
+    margin-right: 10px;
+}
+
+.mesmoEmTodasPlataformasCheckBoxWrapper{
+    margin-bottom: 30px;
+}
+
+.createYourPlayerCamisaInfoInputsWrapper{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.numeroCamisaInput{
+    width:320px;
+}
+
+.nomeCamisaInput{
+    width:660px;
+}
+
+.createYourPlayerButtonsContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.createYourPlayerLimparDadosButton{
+    width: 265px;
+    height: 48px;
+    color: white;
+    background: #525252;
+    border: none;
+}
+
+.createYourPlayerCriarJogadorButton{
+    width: 320px;
+    height: 48px;
+    color: white;
+    background: #1DA775;
+    border: none;
+}
+
+.createYourPlayerCriarJogadorButton:disabled{
+    opacity: 0.3;
 }

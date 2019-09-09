@@ -25,7 +25,7 @@
                     <div id="xboxLogoDiv">
                         <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
                     </div>
-                    <div id="ps4LogoDiv">
+                    <div id="ps4LogoDivLoginDisableBgColor">
                         <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
                     </div>
                 </div>
@@ -101,152 +101,150 @@
 
                     </ul>
                 </div>
-                <button class="mainGreenButton">LOGIN</button>
+                <button class="mainGreenButton" disabled>LOGIN</button>
             </nav>
         </div>
     </nav>
     <!-- END OF MAIN NAVBAR -->
-
-    <!-- CRIESUACONTA START-->
-    <!-- <img class="footballPlayerCadastro" src="./assets/images/football player cadastro.jpg" alt="">  -->
+    
+    <!-- HERO START-->
     <div class="fixNavbarPosition"></div>
-    <div class="cadastroBody">
-        <div class="crieSuaContaTitleContainer">
-            <p class="crieSuaConta">CRIE SUA CONTA</p>
-            <p class="preenchaOsDados">Preencha os dados abaixo para criar a sua conta.</p>
+    <div class="teamsHeroContainer">
+        <div class="teamsHeroWrapper">
+                <p class="teamsHomeTitle">HOME</p>
+                <p class="teamsHeroTitle">EQUIPES</p>
+                <img class="ps4LogoTeamsHero" src="./assets/images/PS4-logo.png" alt="">
         </div>
-        <form action="#" class="cadastroForm">
-            <div class="informacoesPessoaiscontainer">
-                <p class="informacoesPessoais">Informações Pessoais</p>
-                <div class="profilePhotoContainer">
-                    <div class="profilePhotoWrapper">
+    </div>
+    <div class="teamsRankingContainer">
+        <div class="top3Container">
+            <div class="teamsFirstPlace teamsTop3Container">
+                <div class="rankPositionAndNameWrapper">
+                    <span class="position">1</span>
+                    <span class="blackPipeSeparator">|</span>
+                    <span class="teamsRankingTeamName">F C LEGENDZ</span>    
+                </div> 
+                <div class="teamPointsWrapper">
+                    <img class="selectFlag" src="./assets/images/brazil.svg" alt="">
+                    <p class="teamPoints">1870</p>
+                    <p class="teamsPontosText">PONTOS</p>
+                </div>
+                <img src="/assets/images/equipesTop3Time1.png" alt="">
+                <div class="teamInfoContainer">
+                    <div class="infoTitulos">
+                        <p class="infoNumber" id="titulosInfoNumber">4</p>
+                        <p class="teamsDescriptionText">TÍTULOS</p>
+                    </div>
+
+                    <div class="infoVitorias">
+                        <p class="infoNumber" id="vitoriasInfoNumber">57</p>
+                        <p class="teamsDescriptionText">VITÓRIAS</p>
+                    </div>
+
+                    <div class="infoEmpates">
+                        <p class="infoNumber" id="empatesInfoNumber">14</p>
+                        <p class="teamsDescriptionText">EMPATES</p>
+                    </div>
+
+                    <div class="infoDerrotas">
+                        <p class="infoNumber" id="derrotasInfoNumber">6</p>
+                        <p class="teamsDescriptionText">DERROTAS</p>
+                    </div>
+                </div>
+                <div class="teamsUserInfoContainer">
+                    <div class="teamsUserProfilePhoto">
 
                     </div>
-                    <div class="selecionePhotoContainer">
-                        <p class="label imagemDePerfil">Imagem de Perfil *</p>
-                        <div class="selecioneImagemWrapper">
-                            <input class="input selecioneImagemInput" type="text">
-                            <button class="mainGreenButton procurar">PROCURAR</button>
+                    <p class="teamsUserName">IFOGAO</p>
+                </div>
+            </div>        
+
+                <div class="teamsSecondPlace teamsTop3Container">
+                    <div class="rankPositionAndNameWrapper">
+                        <span class="position">2</span>
+                        <span class="blackPipeSeparator">|</span>
+                        <span class="teamsRankingTeamName">JOTUNNE SPORTS</span>    
+                    </div> 
+                    <div class="teamPointsWrapper">
+                        <img class="selectFlag" src="./assets/images/brazil.svg" alt="">
+                        <p class="teamPoints">1824</p>
+                        <p class="teamsPontosText">PONTOS</p>
+                    </div>
+                    <img src="/assets/images/equipesTop3Time2.png" alt="">
+                    <div class="teamInfoContainer">
+                        <div class="infoTitulos">
+                            <p class="infoNumber" id="titulosInfoNumber">1</p>
+                            <p class="teamsDescriptionText">TÍTULOS</p>
+                        </div>
+    
+                        <div class="infoVitorias">
+                            <p class="infoNumber" id="vitoriasInfoNumber">118</p>
+                            <p class="teamsDescriptionText">VITÓRIAS</p>
+                        </div>
+    
+                        <div class="infoEmpates">
+                            <p class="infoNumber" id="empatesInfoNumber">41</p>
+                            <p class="teamsDescriptionText">EMPATES</p>
+                        </div>
+    
+                        <div class="infoDerrotas">
+                            <p class="infoNumber" id="derrotasInfoNumber">28</p>
+                            <p class="teamsDescriptionText">DERROTAS</p>
                         </div>
                     </div>
-                </div>
-                <p class="label NomeCompleto">Nome completo *</p>
-                <input class="input nomeCompleto" type="text">
-
-                <div class="cpfGeneroNascWrapper">
-                    <div class="cpfInputWrapper">
-                        <p class="label cpf">CPF *</p>
-                        <input class="input cpfInput" type="text">
-                    </div>
-                    <div class="generoInputWrapper">
-                        <p class="label genero">Gênero *</p>
-                        <input class="input generoInput" type="text">
-                    </div>
-                    <div class="dataNascInputWrapper">
-                        <p class="label dataNasc">Data Nascimento *</p>
-                        <input class="input dataNascInput" type="text">
-                    </div>
-                </div>
-                <p class="label email">E-mail *</p>
-                <input class="input emailInput" type="text">
-
-                <p class="label confirmarEmail">Confirmar E-mail *</p>
-                <input type="text" class="input confirmarEmailInput">
-
-
-                <p class="label telefoneCelular">Telefone Celular *</p>
-                <div class="telefoneCelularWrapper">
-                    <input type="text" class="input dddInput">
-                    <input type="text" class="input numeroInput">
-                </div>
-            </div>
-
-            <div class="enderecoContainer">
-                <p class="enderecoTitle">Endereço</p>
-                <p class="label cep">CEP *</p>
-                <input type="text" class="input cepInput">
-
-                <div class="enderecoWrapper">
-                    <div class="endercoWrapperLabel">  
-                        <p class="label endereco">Endereço</p>
-                        <input type="text" class="input enderecoInput">
-                    </div> 
-                    <div class="numeroCasaWrapper">   
-                        <p class="label numeroCasa">Número</p>
-                        <input type="text" class="input numeroCasaInput">
-                    </div> 
-                </div>
-
-                <div class="complementoWarapper">
-                    <div class="complementoWrapperLabel">
-                        <p class="label complemeto">Complemento</p>
-                        <input type="text" class="input complementoInput">
-                    </div>
-                    <div class="bairroWrapper">
-                        <p class="label bairro">Bairro</p>
-                        <input type="text" class="input bairroInput">
-                    </div>
-                </div>
-
-                <div class="estadoWrapper">
-                    <div class="estadoWrapperLabel">
-                        <p class="label estado">Estado *</p>
-                        <input type="text" class="input estadoInput">
-                    </div>
-                    <div class="cidadeWrapper">
-                        <p class="label cidade">Cidade *</p>
-                        <input type="text" class="input cidadeInput">
-                    </div>
-                    <div class="paisWrapper">
-                        <p class="label pais">País *</p>
-                        <input type="text" class="input paisInput">
-                    </div>        
-                </div>
-                                
-                <div class="redesSociaisContainer">
-                    <p class="redesSociaisTitle">Redes Sociais</p>
-                    <p class="label redeSociaisLabel">Instagram</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Youtube</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Twitch.TV</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Twitter</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Facebook</p>
-                    <input type="text" class="input redesSociaisInput">
-                </div>
-
-                <div class="segurancaContainer">
-                    <p class="segurancaTitle">Segurança</p>
-
-                    <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
-                    <input type="password" class="input senhaInput">    
-                    <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1 número e 1 caractere</p>
-                    <p class="instrucoesSenha">especial.</p>
-
-                    <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
-                    <input type="password" class="input senhaInput">
-                    
-                    <div class="liEConcordoContainer">
-                        <input id="liEconcordo"type="checkbox">
-                        <label for="liEconcordo">Eu li e concordo com os Temos e Condições GlobalFutPro. *</label>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </form>   
+                    <div class="teamsUserInfoContainer">
+                        <div class="teamsUserProfilePhoto">
     
+                        </div>
+                        <p class="teamsUserName">FELIPE-JTNN</p>
+                    </div>
+                </div>
+
+
+                <div class="teamsThirdPlace teamsTop3Container">
+                    <div class="rankPositionAndNameWrapper">
+                        <span class="position">3</span>
+                        <span class="blackPipeSeparator">|</span>
+                        <span class="teamsRankingTeamName">ELEVEN GAMING</span>    
+                    </div> 
+                    <div class="teamPointsWrapper">
+                        <img class="selectFlag" src="./assets/images/brazil.svg" alt="">
+                        <p class="teamPoints">1812</p>
+                        <p class="teamsPontosText">PONTOS</p>
+                    </div>
+                    <img src="/assets/images/equipesTop3Time3.png" alt="">
+                    <div class="teamInfoContainer">
+                        <div class="infoTitulos">
+                            <p class="infoNumber" id="titulosInfoNumber">2</p>
+                            <p class="teamsDescriptionText">TÍTULOS</p>
+                        </div>
+    
+                        <div class="infoVitorias">
+                            <p class="infoNumber" id="vitoriasInfoNumber">161</p>
+                            <p class="teamsDescriptionText">VITÓRIAS</p>
+                        </div>
+    
+                        <div class="infoEmpates">
+                            <p class="infoNumber" id="empatesInfoNumber">58</p>
+                            <p class="teamsDescriptionText">EMPATES</p>
+                        </div>
+    
+                        <div class="infoDerrotas">
+                            <p class="infoNumber" id="derrotasInfoNumber">102</p>
+                            <p class="teamsDescriptionText">DERROTAS</p>
+                        </div>
+                    </div>
+                    <div class="teamsUserInfoContainer">
+                        <div class="teamsUserProfilePhoto">
+    
+                        </div>
+                        <p class="teamsUserName">IMPERADO02 </p>
+                    </div>
+                </div>    
+        </div>
     </div>
 
-
-    <!-- CRIESUACONTA END-->
+    <!-- HERO END-->
 
     <!-- FOOTER START-->
 
@@ -292,4 +290,4 @@
     </script>
 </body>
 
-</html>
+</html> 
