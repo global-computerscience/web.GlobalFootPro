@@ -16,67 +16,72 @@
 
 <body>
 
+
     <!-- BEGIN OF OPTIONS NAVBAR -->
     <nav class="navbarWrapper">
 
         <nav class="navBackground">
             <nav class="optionsBarCore">
                 <div class="consoleOption">
-                    <div id="xboxLogoDiv">
-                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
+                    <div class="xboxLogoDiv withoutColor">
+                        <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
                     </div>
-                    <div id="ps4LogoDiv">
-                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
+                    <div class="ps4LogoDiv withoutColor">
+                        <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
                     </div>
                 </div>
                 <div class="rightSideOptions">
                     <div class="socialMidiaOptions">
-                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
-                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
-                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
                     </div>
-                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
-
+                    <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
+    
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                            <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
                         </button>
-                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                        
+                        <!--Code to add more Leagues on dropdown-->
+                        <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
-                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
-                        </div>
+                                    src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
+                        </div> -->
                     </div>
-
-                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
+    
+                    <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PT
                         </button>
-                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                        
+                        <!-- Code to add more Language options on language dropdown-->
+                        <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item languageSelec" href="#">ENG</a>
-                        </div>
+                        </div> -->
                     </div>
             </nav>
         </nav>
-
-
+    
+    
         <!-- END OF OPTIONS NAVBAR -->
-
+    
         <div class="mainNavbarBackground">
             <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
-                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
+                        src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-
+    
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -98,167 +103,295 @@
                         <li class="nav-item">
                             <a class="nav-link navLink" href="#">RANKING</a>
                         </li>
-
+    
                     </ul>
                 </div>
-                <button class="mainGreenButton">LOGIN</button>
+                <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
             </nav>
         </div>
     </nav>
     <!-- END OF MAIN NAVBAR -->
 
     <!-- CRIESUACONTA START-->
-    <!-- <img class="footballPlayerCadastro" src="./assets/images/football player cadastro.jpg" alt="">  -->
     <div class="fixNavbarPosition"></div>
     <div class="cadastroBody">
-        <div class="crieSuaContaTitleContainer">
-            <p class="crieSuaConta">CRIE SUA CONTA</p>
-            <p class="preenchaOsDados">Preencha os dados abaixo para criar a sua conta.</p>
-        </div>
-        <form action="#" class="cadastroForm">
-            <div class="informacoesPessoaiscontainer">
-                <p class="informacoesPessoais">Informações Pessoais</p>
-                <div class="profilePhotoContainer">
-                    <div class="profilePhotoWrapper">
+        <div class="signUpMainContentWrapper">
+            <div class="crieSuaContaTitleContainer">
+                <p class="crieSuaConta">CRIE SUA CONTA</p>
+                <p class="preenchaOsDados">Preencha os dados abaixo para criar a sua conta.</p>
+            </div>
+            <form action="#" class="cadastroForm needs-validation" novalidate>
+                <div class="informacoesPessoaiscontainer">
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/signUp/form-login-user.svg" alt="">
+                        <p class="subtitle">Informações Pessoais</p>
+                    </div>
+                    <div class="profilePhotoContainer">
+                        <div class="profilePhotoWrapper">
+
+                        </div>
+
+                        <div class="selecionePhotoContainer">
+                            <p class="label imagemDePerfil">Imagem de Perfil *</p>
+                            <div class="selecioneImagemWrapper">
+                                <input class="input selecioneImagemInput form-control" type="text"
+                                    placeholder="Selecionar imagem em seu computador" required>
+                                <button class="mainGreenButton procurar">PROCURAR</button>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                    </div>
+                    <div class="invalid-feedback marginTopForWarning">Preencha o campo corretamente.</div>
+                    <p class="label NomeCompleto">Nome completo *</p>
+                    <input class="input nomeCompleto form-control" type="text" required>
+                    <div class="invalid-feedback">Preencha o campo corretamente.</div>
+
+                    <div class="cpfGeneroNascWrapper">
+                        <div class="cpfInputWrapper">
+                            <p class="label cpf">CPF *</p>
+                            <input class="input cpfInput form-control" type="number" placeholder="Somente números" required>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                        <div class="generoInputWrapper">
+                            <p class="label genero">Gênero *</p>
+                            <select class="input generoSelect form-control" type="text" required>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino" selected>Masculino</option>
+                                <option value="outro">Outro</option>
+
+                            </select>
+                        </div>
+                        <div class="dataNascInputWrapper">
+                            <div class="wrapper">
+                                <p class="label dataNasc">Data Nascimento *</p>
+                                <input class="input dataNascInput form-control" type="text" placeholder="DD/MM/AAAA" required>
+                                <div class="invalid-feedback">Campo invélido.</div>
+                            </div>
+                        </div>
+                        <img class="dataNascIcon" src="/assets/images/signUp/form-data.svg" alt="">
 
                     </div>
-                    <div class="selecionePhotoContainer">
-                        <p class="label imagemDePerfil">Imagem de Perfil *</p>
-                        <div class="selecioneImagemWrapper">
-                            <input class="input selecioneImagemInput" type="text">
-                            <button class="mainGreenButton procurar">PROCURAR</button>
+      
+                    <p class="label email">E-mail *</p>
+                    <input class="input emailInput form-control" type="email" required>
+                    <div class="invalid-feedback">Preencha o campo corretamente.</div>
+
+                    <p class="label confirmarEmail">Confirmar E-mail *</p>
+                    <input class="input confirmarEmailInput form-control" type="email" required>
+                    <div class="invalid-feedback">Preencha o campo corretamente.</div>
+
+
+                    <p class="label telefoneCelular">Telefone Celular *</p>
+                    <div class="telefoneCelularWrapper">
+                        <div class="wrapper">
+                            <input class="input dddInput form-control" type="number" placeholder="DDD" required>
+                            <div class="invalid-feedback">Inválido.</div>
+                        </div>
+                        <div class="wrapper">
+                            <input class="input numeroInput form-control" type="number" placeholder="Número" required>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="enderecoContainer">
+                    <div class="createYourPlayerSubtitleAndIconContainer">
+                        <img class="subtitleIcon" src="./assets/images/signUp/form-address.svg" alt="">
+                        <p class="subtitle">Endereço</p>
+                    </div>
+
+                    <div class="cepWrapper">
+                        <div class="wrapper">
+                            <p class="label cep">CEP *</p>
+                            <input class="input cepInput form-control" type="text" required>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                        <img class="cepIcon" src="./assets/images/signUp/form-search.svg" alt="">
+                    </div>
+
+
+                    <div class="enderecoWrapper">
+                        <div class="endercoWrapperLabel">
+                            <p class="label endereco">Endereço</p>
+                            <input class="input enderecoInput inputDisabledDarker form-control" type="text" disabled
+                                required>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                        <div class="numeroCasaWrapper">
+                            <p class="label numeroCasa">Número</p>
+                            <input class="input numeroCasaInput form-control" type="text" required>
+                            <div class="invalid-feedback">Campo inválido</div>
                         </div>
                     </div>
-                </div>
-                <p class="label NomeCompleto">Nome completo *</p>
-                <input class="input nomeCompleto" type="text">
 
-                <div class="cpfGeneroNascWrapper">
-                    <div class="cpfInputWrapper">
-                        <p class="label cpf">CPF *</p>
-                        <input class="input cpfInput" type="text">
-                    </div>
-                    <div class="generoInputWrapper">
-                        <p class="label genero">Gênero *</p>
-                        <input class="input generoInput" type="text">
-                    </div>
-                    <div class="dataNascInputWrapper">
-                        <p class="label dataNasc">Data Nascimento *</p>
-                        <input class="input dataNascInput" type="text">
-                    </div>
-                </div>
-                <p class="label email">E-mail *</p>
-                <input class="input emailInput" type="text">
-
-                <p class="label confirmarEmail">Confirmar E-mail *</p>
-                <input type="text" class="input confirmarEmailInput">
-
-
-                <p class="label telefoneCelular">Telefone Celular *</p>
-                <div class="telefoneCelularWrapper">
-                    <input type="text" class="input dddInput">
-                    <input type="text" class="input numeroInput">
-                </div>
-            </div>
-
-            <div class="enderecoContainer">
-                <p class="enderecoTitle">Endereço</p>
-                <p class="label cep">CEP *</p>
-                <input type="text" class="input cepInput">
-
-                <div class="enderecoWrapper">
-                    <div class="endercoWrapperLabel">  
-                        <p class="label endereco">Endereço</p>
-                        <input type="text" class="input enderecoInput">
-                    </div> 
-                    <div class="numeroCasaWrapper">   
-                        <p class="label numeroCasa">Número</p>
-                        <input type="text" class="input numeroCasaInput">
-                    </div> 
-                </div>
-
-                <div class="complementoWarapper">
-                    <div class="complementoWrapperLabel">
-                        <p class="label complemeto">Complemento</p>
-                        <input type="text" class="input complementoInput">
-                    </div>
-                    <div class="bairroWrapper">
-                        <p class="label bairro">Bairro</p>
-                        <input type="text" class="input bairroInput">
-                    </div>
-                </div>
-
-                <div class="estadoWrapper">
-                    <div class="estadoWrapperLabel">
-                        <p class="label estado">Estado *</p>
-                        <input type="text" class="input estadoInput">
-                    </div>
-                    <div class="cidadeWrapper">
-                        <p class="label cidade">Cidade *</p>
-                        <input type="text" class="input cidadeInput">
-                    </div>
-                    <div class="paisWrapper">
-                        <p class="label pais">País *</p>
-                        <input type="text" class="input paisInput">
-                    </div>        
-                </div>
-                                
-                <div class="redesSociaisContainer">
-                    <p class="redesSociaisTitle">Redes Sociais</p>
-                    <p class="label redeSociaisLabel">Instagram</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Youtube</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Twitch.TV</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Twitter</p>
-                    <input type="text" class="input redesSociaisInput">
-
-                    <p class="label redeSociaisLabel">Facebook</p>
-                    <input type="text" class="input redesSociaisInput">
-                </div>
-
-                <div class="segurancaContainer">
-                    <p class="segurancaTitle">Segurança</p>
-
-                    <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
-                    <input type="password" class="input senhaInput">    
-                    <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1 número e 1 caractere</p>
-                    <p class="instrucoesSenha">especial.</p>
-
-                    <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
-                    <input type="password" class="input senhaInput">
-                    
-                    <div class="liEConcordoContainer">
-                        <input id="liEconcordo"type="checkbox">
-                        <label for="liEconcordo">Eu li e concordo com os Temos e Condições GlobalFutPro. *</label>
+                    <div class="complementoWarapper">
+                        <div class="complementoWrapperLabel">
+                            <p class="label complemeto">Complemento</p>
+                            <input class="input complementoInput" type="text">
+                        </div>
+                        <div class="bairroWrapper">
+                            <p class="label bairro">Bairro</p>
+                            <input class="input bairroInput" type="text">
+                        </div>
                     </div>
 
+                    <div class="estadoWrapper">
+                        <div class="estadoWrapperLabel">
+                            <p class="label estado">Estado *</p>
+                            <select class="input estadoInput inputDisabledDarker form-control" type="text" disabled
+                                required>
+                                <option value="Vazio"></option>
+                            </select>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                        <div class="cidadeWrapper">
+                            <p class="label cidade">Cidade *</p>
+                            <select class="input cidadeInput inputDisabledDarker form-control" type="text" disabled
+                                required>
+                                <option value="Vazio"></option>
+                            </select>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                        <div class="paisWrapper">
+                            <p class="label pais">País *</p>
+                            <select class="input paisInput inputDisabledDarker form-control" type="text" disabled
+                                required>
+                                <option value="Vazio"></option>
+                            </select>
+                            <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                        </div>
+                    </div>
+
+                    <div class="redesSociaisContainer">
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon" src="./assets/images/signUp/form-social.svg" alt="">
+                            <p class="subtitle">Redes Sociais</p>
+                        </div>
+
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon socialNetworkIcon" src="./assets/images/signUp/form-instagram.svg"
+                                alt="">
+                            <div class="wrapper">
+                                <p class="label redeSociaisLabel">Instagram</p>
+                                <input type="text" class="input redesSociaisInput"
+                                    placeholder="Preencha com o link completo">
+                            </div>
+                        </div>
+
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon socialNetworkIcon" src="./assets/images/signUp/form-youtube.svg"
+                                alt="">
+                            <div class="wrapper">
+                                <p class="label redeSociaisLabel">Youtube</p>
+                                <input type="text" class="input redesSociaisInput"
+                                    placeholder="Preencha com o link completo">
+                            </div>
+                        </div>
+
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon socialNetworkIcon" src="./assets/images/signUp/form-twitch.svg"
+                                alt="">
+                            <div class="wrapper">
+                                <p class="label redeSociaisLabel">Twitch.TV</p>
+                                <input type="text" class="input redesSociaisInput"
+                                    placeholder="Preencha com o link completo">
+                            </div>
+                        </div>
+
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon socialNetworkIcon" src="./assets/images/signUp/form-twitter.svg"
+                                alt="">
+                            <div class="wrapper">
+                                <p class="label redeSociaisLabel">Twitter</p>
+                                <input type="text" class="input redesSociaisInput"
+                                    placeholder="Preencha com o link completo">
+                            </div>
+                        </div>
+
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon socialNetworkIcon" src="./assets/images/signUp/form-facebook.svg"
+                                alt="">
+                            <div class="wrapper">
+                                <p class="label redeSociaisLabel">Facebook</p>
+                                <input type="text" class="input redesSociaisInput"
+                                    placeholder="Preencha com o link completo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="segurancaContainer">
+                        <div class="createYourPlayerSubtitleAndIconContainer">
+                            <img class="subtitleIcon" src="./assets/images/signUp/form-senha.svg" alt="">
+                            <p class="subtitle">Segurança</p>
+                        </div>
+
+
+                        <div class="digiteSuaSenhaWrapper">
+                            <div class="wrapper">
+                                <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
+                                <input type="password" class="input senhaInput form-control" required>
+                                <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1
+                                    número e 1 caractere</p>
+                                <p class="instrucoesSenha">especial.</p>
+                            </div>
+                            <img class="passwordEyeIcon" src="./assets/images/signUp/form-eye-off.svg" alt="">
+                        </div>
+                        <div class="digiteSuaSenhaWrapper">
+                            <div class="wrapper">
+                                <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
+                                <input type="password" class="input senhaInput form-control" required>
+                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                            </div>
+                            <img class="confirmPasswordEyeIcon" src="./assets/images/signUp/form-eye-off.svg" alt="">
+                        </div>    
+                       
+
+                        <hr class="separator">
+
+                        <div class="liEConcordoContainer">
+                            <input id="liEconcordo" type="checkbox">
+                            <label for="liEconcordo">Eu li e concordo com os "<a class="greenTextLink" href="">Temos e Condições</a>"  GlobalFutPro. *</label>
+                        </div>
+
+
+                        <div class="createYourPlayerButtonsContainer">
+                            <button class="createYourPlayerLimparDadosButton">LIMPAR DADOS</button>
+                            <!--To enable this button just remove "disabled" propertie from button-->
+                            <button type="submit" class="createYourPlayerCriarJogadorButton">CRIAR CONTA</button>
+                        </div>
+                    </div>
+
                 </div>
+                <hr>
+
+            </form>
 
 
-            </div>
-        </form>   
-    
+        </div>
+        <div class="socialMediaIconsContainer">
+            <a href=""><img src="./assets/images/footer-facebook.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-instagram.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-youtube.svg" alt=""></a>
+        </div>
+
     </div>
-
 
     <!-- CRIESUACONTA END-->
 
-    <!-- FOOTER START-->
 
+
+    <!-- FOOTER START-->
+   
     <div class="footerContainer">
         <div class="footerWrapper">
-            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <img class="bottomFutProLogo" src="./assets/images/footerIcons/GlobalFutProLogoWhite.png" alt="">
             <div class="footerSobre GlobalFutProWrapper">
                 <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
                 <ul class="footerList">
-                    <li>Quem Somos</li>
-                    <li>Regulamento</li>
-                    <li>Pagamentos</li>
+                    <a href=""><li>Quem Somos</li></a>
+                    <a href=""><li>Regulamento</li></a>
+                    <a href=""><li>Pagamentos</li></a>
                 </ul>
             </div>
 
@@ -271,25 +404,31 @@
                 </ul>
             </div>
             <div class="footerSponsorsLogoContainer">
-
+                <img  class="liveArenaFooter" src="./assets/images/footerIcons/liveArena.png" alt="">  
+                <div class="footerSponsorsWrapper">
+                    <img class="inovaSportsFooter" src="./assets/images/footerIcons/InovaSports.png" alt="">
+                    <img class="xtremeFooter" src="./assets/images/footerIcons/xtreme.png" alt="">
+                </div>                             
+                <div class="footerSponsorsWrapperLast">
+                    <img class="futpressFooter" src="./assets/images/footerIcons/7 - logo17.png" alt="">
+                    <img class="aceCampusFooter" src="./assets/images/footerIcons/aceCampus.png" alt=""> 
+                </div>
             </div>
-        </div>
-        <hr>
+        </div> 
+        <hr class="footerHr">
         <div class="copyrightWrapper">
             <p>Copyright © 2019 GLOBALFUTPRO</p>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
+    <script src="./assets/js/formValidation.js"></script>
+
+    <!--bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

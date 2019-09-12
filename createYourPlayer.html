@@ -16,67 +16,72 @@
 
 <body>
 
+   
     <!-- BEGIN OF OPTIONS NAVBAR -->
     <nav class="navbarWrapper">
 
         <nav class="navBackground">
             <nav class="optionsBarCore">
                 <div class="consoleOption">
-                    <div id="xboxLogoDiv">
-                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
+                    <div class="xboxLogoDiv withoutColor">
+                        <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
                     </div>
-                    <div id="ps4LogoDiv">
-                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
+                    <div class="ps4LogoDiv withoutColor">
+                        <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
                     </div>
                 </div>
                 <div class="rightSideOptions">
                     <div class="socialMidiaOptions">
-                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
-                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
-                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
                     </div>
-                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
-
+                    <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
+    
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                            <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
                         </button>
-                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                        
+                        <!--Code to add more Leagues on dropdown-->
+                        <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
-                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
-                        </div>
+                                    src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
+                        </div> -->
                     </div>
-
-                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
+    
+                    <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PT
                         </button>
-                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                        
+                        <!-- Code to add more Language options on language dropdown-->
+                        <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item languageSelec" href="#">ENG</a>
-                        </div>
+                        </div> -->
                     </div>
             </nav>
         </nav>
-
-
+    
+    
         <!-- END OF OPTIONS NAVBAR -->
-
+    
         <div class="mainNavbarBackground">
             <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
-                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
+                        src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-
+    
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -98,7 +103,7 @@
                         <li class="nav-item">
                             <a class="nav-link navLink" href="#">RANKING</a>
                         </li>
-
+    
                     </ul>
                 </div>
                 <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
@@ -115,17 +120,17 @@
                     <p class="crieSeuJogador">CRIE SEU JOGADOR</p>
                     <p class="preenchaOsDadosCrieJogador">Preencha os dados abaixo para criar seu jogador</p>
                     <div class="createYourPlayerSubtitleAndIconContainer">
-                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <img class="subtitleIcon" src="./assets/images/CreateYourPlayer/form-platform.svg" alt="">
                         <p class="subtitle">Escolha a Plataforma</p>
                     </div>
 
                     <div class="plataformaContainer">
                         <div class="plataformaPs4Wrapper">
-                            <img class="createYourPlayerPS4Logo" src="./assets/images/ps4-logo-blue.png" alt="">
+                            <img class="createYourPlayerPS4Logo" src="./assets/images/CreateYourPlayer/ps4-logo-blue.png" alt="">
                         </div>
 
                         <div class="plataformaXboxWrapper">
-                            <img class="createYourPlayerXBOXLogo" src="./assets/images/XBOX-logo-green.png" alt="">
+                            <img class="createYourPlayerXBOXLogo" src="./assets/images/CreateYourPlayer/XBOX-logo-green.png" alt="">
                         </div>
                     </div>
                     <div class="createYourPlayerPS4XboxLabel">
@@ -134,35 +139,36 @@
                     </div>
                 </div>
                 <div class="createYouPlayerTopImageWrapper">
-                    <img class="createYouPlayerTopImage" src="./assets/images/football-players-crie-seu-jogador.jpg"
-                        alt="">
+                    <img class="createYouPlayerTopImage" src="./assets/images/CreateYourPlayer/football-players-crie-seu-jogador.jpg"alt="">
                 </div>
             </div>
 
             <div class="createYourPlayerDadosDoJogadorWrapper">
                 <div class="createYourPlayerSubtitleAndIconContainer">
-                    <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                    <img class="subtitleIcon" src="./assets/images/CreateYourPlayer/form-login-user.svg" alt="">
                     <p class="subtitle">Dados do Jogador</p>
                 </div>
 
                 <!-- entire form of this page, starts here-->
-                <form action="">
+                <form class="needs-validation" novalidate>
                     <p class="label dadosDoJogadorLabel">Apelido *</p>
-                    <input class="input seuNomeNaPlataformaInput" type="text" class="input"
-                        id="seuNomeDentroDaPlataformaInput" placeholder="Seu nome dentro da Plataforma">
+                    <input class="input seuNomeNaPlataformaInput form-control" type="text" id="seuNomeDentroDaPlataformaInput" placeholder="Seu nome dentro da Plataforma" required>
+                    <div class="invalid-feedback">Preencha o campo corretamente.</div>
 
                     <div class="createYourPlayerPSNinputWrapper">
                         <div class="wrapper">
                             <p class="label labelDisabled PSNlabel">PSN *</p>
                             <!-- to enable this input, remove propertie disabled and inputDisabled class. Do it for label above too (remove labelDisabled class)-->
-                            <input disabled type="text" class="input inputDisabled PSNinput"
-                                id="createYourPlayerPSNinput">
+                            <input disabled type="text" class="input inputDisabled PSNinput form-control"
+                                id="createYourPlayerPSNinput" required>
+                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                         <div class="wrapper">
                             <p class="label labelDisabled GameTagLabel">Game Tag*</p>
                             <!-- to enable this input, remove propertie disabled and inputDisabled class. Do it for label above too (remove labelDisabled class)-->
-                            <input disabled type="text" class="input inputDisabled PSNinput"
-                                id="createYourPlayerGametaginput">
+                            <input disabled type="text" class="input inputDisabled PSNinput form-control" 
+                                id="createYourPlayerGametaginput" required>
+                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                     </div>
                     <p class="label jogaEmAlgumaEquipe">Joga em alguma esquipe? Escolha abaixo.</p>
@@ -171,19 +177,19 @@
                     </select>
 
                     <div class="createYourPlayerSubtitleAndIconContainer">
-                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <img class="subtitleIcon" src="./assets/images/CreateYourPlayer/form-posicao-1.svg" alt="">
                         <p class="subtitle">Posição</p>
                     </div>
 
                     <p class="label subtitleDescriprion">Escolha a principal posição em que quer jogar *</p>
-
+                    
                     <div class="crateYourPlayerRadioButttonsContainer">
 
                         <div id="goleiro" class="radioButtonsWrapper">
-                            <input type="radio" name="posicaoPrimaria" value="goleiro" class="inputRadio">
+                            <input type="radio" name="posicaoPrimaria" value="goleiro" class="inputRadio form-control" required>
                             <p class="label">GOLEIRO</p>
+                            <div class="invalid-feedback invalidFeedBackMarginCorrection">Escolha sua posição principal</div>
                         </div>
-
                         <div id="lateralEsquerdo" class="radioButtonsWrapper">
                             <input type="radio" name="posicaoPrimaria" value="lateralEsquerdo" class="inputRadio">
                             <p class="label">LATERAL ESQUERDO</p>
@@ -253,14 +259,15 @@
                             <p class="label">PONTA DIREITA</p>
                         </div>
                     </div>
+                   
                     <div class="mesmoEmTodasPlataformasCheckBoxWrapper">
                         <input id="mesmaPosicaoTodasPlataformasPrimaria" type="checkbox" checked>
                         <span class="label"> Ocupar a mesma posição em todas as plataformas.</span>
                     </div>
 
-
+                    
                     <div class="createYourPlayerSubtitleAndIconContainer">
-                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <img class="subtitleIcon" src="./assets/images/CreateYourPlayer/form-uniforme.svg" alt="">
                         <p class="subtitle">Uniforme</p>
                     </div>
 
@@ -282,7 +289,7 @@
                     </div>
 
                     <div class="createYourPlayerSubtitleAndIconContainer">
-                        <img class="subtitleIcon" src="./assets/images/boy.svg" alt="">
+                        <img class="subtitleIcon" src="./assets/images/CreateYourPlayer/form-posicao-2.svg" alt="">
                         <p class="subtitle">Posição Secundária</p>
                     </div>
 
@@ -291,8 +298,9 @@
                     <div class="crateYourPlayerRadioButttonsContainer">
 
                         <div id="goleiro" class="radioButtonsWrapper">
-                            <input type="radio" name="posicaoSecundaria" value="goleiro" class="inputRadio">
+                            <input type="radio" name="posicaoSecundaria" value="goleiro" class="inputRadio form-control" required>
                             <p class="label">GOLEIRO</p>
+                            <div class="invalid-feedback invalidFeedBackMarginCorrection">Escolha sua posição secundária</div>
                         </div>
 
                         <div id="lateralEsquerdo" class="radioButtonsWrapper">
@@ -370,37 +378,39 @@
                         <span class="label"> Ocupar a mesma posição em todas as plataformas</span>
                     </div>
 
-                    <hr class="separator">
-
+                    <hr>
+        
                     <div class="createYourPlayerButtonsContainer">
                         <button class="createYourPlayerLimparDadosButton">LIMPAR DADOS</button>
                         <!--To enable this button just remove "disabled" propertie from button-->
-                        <button type="submit" class="createYourPlayerCriarJogadorButton" disabled>CRIAR JOGADOR</button>
+                        <button type="submit" class="createYourPlayerCriarJogadorButton" >CRIAR JOGADOR</button>
                     </div>
+
+                    <hr>
                 </form>
-
-                <hr class="separator">
-
-                <div class="socialMediaIconsContainer">
-
-                </div>
             </div>
+
+        <div class="socialMediaIconsContainer">
+            <a href=""><img src="./assets/images/footer-facebook.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-instagram.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-youtube.svg" alt=""></a>
+        </div>
 
 
         </div>
     </div>
 
     <!-- FOOTER START-->
-
+  
     <div class="footerContainer">
         <div class="footerWrapper">
-            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <img class="bottomFutProLogo" src="./assets/images/footerIcons/GlobalFutProLogoWhite.png" alt="">
             <div class="footerSobre GlobalFutProWrapper">
                 <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
                 <ul class="footerList">
-                    <li>Quem Somos</li>
-                    <li>Regulamento</li>
-                    <li>Pagamentos</li>
+                    <a href=""><li>Quem Somos</li></a>
+                    <a href=""><li>Regulamento</li></a>
+                    <a href=""><li>Pagamentos</li></a>
                 </ul>
             </div>
 
@@ -413,25 +423,30 @@
                 </ul>
             </div>
             <div class="footerSponsorsLogoContainer">
-
+                <img  class="liveArenaFooter" src="./assets/images/footerIcons/liveArena.png" alt="">  
+                <div class="footerSponsorsWrapper">
+                    <img class="inovaSportsFooter" src="./assets/images/footerIcons/InovaSports.png" alt="">
+                    <img class="xtremeFooter" src="./assets/images/footerIcons/xtreme.png" alt="">
+                </div>                             
+                <div class="footerSponsorsWrapperLast">
+                    <img class="futpressFooter" src="./assets/images/footerIcons/7 - logo17.png" alt="">
+                    <img class="aceCampusFooter" src="./assets/images/footerIcons/aceCampus.png" alt=""> 
+                </div>
             </div>
-        </div>
-        <hr>
+        </div> 
+        <hr class="footerHr">
         <div class="copyrightWrapper">
             <p>Copyright © 2019 GLOBALFUTPRO</p>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-</body>
+    <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
+    <script src="./assets/js/formValidation.js"></script>
 
+    <!--bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

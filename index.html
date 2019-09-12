@@ -19,92 +19,96 @@
     <!-- BEGIN OF OPTIONS NAVBAR -->
     <nav class="navbarWrapper">
 
-        <nav class="navBackground">
-            <nav class="optionsBarCore">
-                <div class="consoleOption">
-                    <div id="xboxLogoDiv">
-                        <img id="xbox" src="./assets/images/XBOX-logo.png" alt="">
-                    </div>
-                    <div id="ps4LogoDiv">
-                        <img id="ps4" src="./assets/images/PS4-logo.png" alt="ps4-logo">
-                    </div>
+    <nav class="navBackground">
+        <nav class="optionsBarCore">
+            <div class="consoleOption">
+                <div class="xboxLogoDiv withoutColor">
+                    <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
                 </div>
-                <div class="rightSideOptions">
-                    <div class="socialMidiaOptions">
-                        <a href=""><img src="./assets/images/facebook-logo.svg" alt="facebook-logo"></a>
-                        <a href=""><img src="./assets/images/instagram-logo.svg" alt="instagram-logo"></a>
-                        <a href=""><img src="./assets/images/youtube.svg" alt="youtube-logo"></a>
-                    </div>
-                    <img class="greenCircleSeparator1" src="./assets/images/greenCircle.png" alt="separator">
+                <div class="ps4LogoDiv withoutColor">
+                    <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
+                </div>
+            </div>
+            <div class="rightSideOptions">
+                <div class="socialMidiaOptions">
+                    <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
+                </div>
+                <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="selectFlag" src="./assets/images/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
-                        </button>
-                        <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
-                                    src="./assets/images/download.png" alt=""> LIGA ITALIANA</a>
-                        </div>
-                    </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                    </button>
+                    
+                    <!--Code to add more Leagues on dropdown-->
+                    <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
+                    </div> -->
+                </div>
 
-                    <img class="greenCircleSeparator2" src="./assets/images/greenCircle.png" alt="">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PT
-                        </button>
-                        <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item languageSelec" href="#">ENG</a>
-                        </div>
-                    </div>
-            </nav>
+                <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PT
+                    </button>
+                    
+                    <!-- Code to add more Language options on language dropdown-->
+                    <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item languageSelec" href="#">ENG</a>
+                    </div> -->
+                </div>
         </nav>
-
-
-        <!-- END OF OPTIONS NAVBAR -->
-
-        <div class="mainNavbarBackground">
-            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
-                        src="./assets/images/GlobalFutPro logo white.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CAMPEONATOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">EQUIPES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">RANKING</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
-            </nav>
-        </div>
     </nav>
+
+
+    <!-- END OF OPTIONS NAVBAR -->
+
+    <div class="mainNavbarBackground">
+        <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
+                    src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CAMPEONATOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">EQUIPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">RANKING</a>
+                    </li>
+
+                </ul>
+            </div>
+            <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
+        </nav>
+    </div>
+</nav>
     <!-- END OF MAIN NAVBAR -->
 
     <!-- HERO START-->
@@ -115,13 +119,13 @@
                 <div class="textPresentation">
                     <p id="aSuaComunidade">A SUA COMUNIDADE</p>
                     <h2 id="proClubs">PRO CLUBS</h2>
-                    <img class="fifaLogo" src="./assets/images/fifa logo.png" alt="">
+                    <img class="fifaLogo" src="./assets/images/index/fifaLogo.png" alt="">
                     <div class="consoleLogosContainer">
-                        <img id="ps4Hero" src="./assets/images/PS4-logo.png" alt="">
-                        <img id="xboxHero" src="./assets/images/XBOX-logo.png" alt="">
+                        <img id="ps4Hero" src="./assets/images/index/PS4-logo.png" alt="">
+                        <img id="xboxHero" src="./assets/images/index/XBOX-logo.png" alt="">
                     </div>
                 </div>
-                <img class="footballPlayers" src="./assets/images/Jogadores com a bola Hero.png" alt="">
+                <img class="footballPlayers" src="./assets/images/index/footballPlayersIndexPageHero.png" alt="">
             </div>
 
             <div class="bottomTextHeroContainer">
@@ -141,7 +145,7 @@
         <div class="posHeroWrapper">
             <p class="maiorCamp">O MAIOR CAMPEONATO DE <strong>PRO CLUBS</strong> DO MUNDO</p>
             <div class="aboutProClubsContainer">
-                <img class="globalFutLogo " src="./assets/images/Global FUT CUP logo.png" alt="">
+                <img class="globalFutLogo " src="./assets/images/index/GlobalFUTCUPLogo.png" alt="">
                 <div class="aboutProClubs">
                     <p class="campeonatoPresencial">CAMPEONATO PRESENCIAL GLOBAL FUT PRO</p>
                     <p class="proClubs">PRO CLUBS</p>
@@ -163,10 +167,10 @@
                     <div class="sponsorsContainer">
                         <button class="mainGreenButton inscrevaSe">INSCREVA-SE</button>
                         <div class="sponsorsLogos">
-                            <img class="aceCampus" src="./assets/images/aceCampus.png" alt="">
-                            <img class="aceCampus" src="./assets/images/sponsor 2.png" alt="">
-                            <img class="aceCampus" src="./assets/images/futpress.png" alt="">
-                            <img class="aceCampus liveArena" src="./assets/images/liveArena.png" alt="">
+                            <img class="aceCampus" src="./assets/images/index/aceCampus.png" alt="">
+                            <img class="aceCampus" src="./assets/images/index/sponsor2.png" alt="">
+                            <img class="aceCampus futpress" src="./assets/images/index/futpress.png" alt="">
+                            <img class="aceCampus liveArena" src="./assets/images/index/live arena.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -187,7 +191,7 @@
                 <div class="confrontosLiga">LIGA</div>
                 <div class="confrontosCopa">COPA</div>
             </div>
-            <img class="confrontosLinhaBranca" src="./assets/images/confrontosLinhaBranca.png" alt="">
+            <img class="confrontosLinhaBranca" src="./assets/images/index/confrontosLinhaBranca.png" alt="">
             <div class="confrontosInfo">
                 <div class="confrontoDateContainer">
                     <div class="confrontoDate">11/09/2019</div>
@@ -199,12 +203,12 @@
                             <p class="teamName">ELEVEN</p>
                             <p class="teamName2">GAMING</p>
                         </div>
-                        <img src="./assets/images/elevenGamingLogo.png" alt="" class="firstTeamLogo">
+                        <img src="./assets/images/index/elevenGamingLogo.png" alt="" class="firstTeamLogo">
                     </div>
-                    <img class="confrontoWhiteX" src="./assets/images/whiteX.png" alt="">
+                    <img class="confrontoWhiteX" src="./assets/images/index/whiteX.png" alt="">
                     <div class="Team2">
                         <div class="Team1">
-                            <img src="./assets/images/fcLegends.png" alt="" class="secondTeamLogo">
+                            <img src="./assets/images/index/fcLegends.png" alt="" class="secondTeamLogo">
                             <div class="teamNameContainer">
                                 <p class="teamName">F.C LEGENDZ</p>
                             </div>
@@ -225,7 +229,7 @@
     <div class="participateContainer">
         <div class="participateContentWraper">
             <div class="section1">
-                <img class="participateIcon" src="" alt="">
+                <img class="participateIcon" src="./assets/images/index/stats-team.svg" alt="">
                 <p class="participateNumber">
                     303
                 </p>
@@ -239,7 +243,7 @@
                 <a href="#" class="participateLink">MOSTRE SUA EQUIPE</a>
             </div>
             <div class="section2">
-                    <img class="participateIcon" src="" alt="">
+                    <img class="participateIcon" src="./assets/images/index/stats-users.svg" alt="">
                     <p class="participateNumber">
                         4534
                     </p>
@@ -250,7 +254,7 @@
                     <a href="#" class="participateLink">CRIE SUA CONTA</a>
             </div>
             <div class="section3">
-                <img class="participateIcon" src="" alt="">
+                <img class="participateIcon campeonatoStatus" src="./assets/images/index/stats-match.svg" alt="">
                 <p class="participateNumber">
                     4
                 </p>
@@ -284,7 +288,7 @@
                 </div>
             </div>
             <div class="footbalPlayerVideoContainer">
-                <img class="footbalPlayerVideo" src="./assets/images/Jogador em pé.jpg" alt="">
+                <img class="footbalPlayerVideo" src="./assets/images/index/jogadorEmPe.jpg" alt="">
             </div>
         </div>
     </div>
@@ -299,7 +303,7 @@
             <div class="subscribeGlobalFutProContainer">
                 <p class="subscribeGlobalFutPro">GLOBALFUT</p>
                 <p class="subscribePro">PR</p>
-                <img class="oBola" src="./assets/images/Obola.png" alt="">
+                <img class="oBola" src="./assets/images/index/Obola.png" alt="">
             </div>
             <p class="podeSerVoce">PODE SER VOCÊ!</p>
             <a href="./signup.html"><button class="subscribeButton">CADASTRE-SE!</button></a>
@@ -316,7 +320,7 @@
             <div class="destaquesCardsWrapper">
 
                 <div class="cardDestaque1">
-                    <img class="logoPs4Card" src="./assets/images/PS4-logo.png" alt="">
+                    <img class="logoPs4Card" src="./assets/images/index/PS4-logo.png" alt="">
                     <div class="bottomCardWrapper">
                         <p class="cardPosicao">POSIÇÃO</p>
                         <div class="cardPosicaoWrapper">
@@ -331,7 +335,7 @@
                     </div>
                 </div>
                 <div class="cardDestaque2">
-                    <img class="logoPs4Card" src="./assets/images/PS4-logo.png" alt="">
+                    <img class="logoPs4Card" src="./assets/images/index/PS4-logo.png" alt="">
                     <div class="bottomCardWrapper">
                         <p class="cardPosicao">POSIÇÃO</p>
                         <div class="cardPosicaoWrapper">
@@ -346,7 +350,7 @@
                     </div>
                 </div>
                 <div class="cardDestaque3">
-                    <img class="logoPs4Card" src="./assets/images/PS4-logo.png" alt="">
+                    <img class="logoPs4Card" src="./assets/images/index/PS4-logo.png" alt="">
                     <div class="bottomCardWrapper">
                         <p class="cardPosicao">POSIÇÃO</p>
                         <div class="cardPosicaoWrapper">
@@ -361,7 +365,7 @@
                     </div>
                 </div>
                 <div class="cardDestaque4">
-                    <img class="logoPs4Card" src="./assets/images/PS4-logo.png" alt="">
+                    <img class="logoPs4Card" src="./assets/images/index/PS4-logo.png" alt="">
                     <div class="bottomCardWrapper">
                         <p class="cardPosicao">POSIÇÃO</p>
                         <div class="cardPosicaoWrapper">
@@ -379,7 +383,9 @@
         </div>
         <hr class="socialIconsDivision" >
         <div class="socialMediaIconsContainer">
-
+            <a href=""><img src="./assets/images/footer-facebook.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-instagram.svg" alt=""></a>
+            <a href=""><img src="./assets/images/footer-youtube.svg" alt=""></a>
         </div>
     </div>
 
@@ -389,13 +395,13 @@
 
     <div class="footerContainer">
         <div class="footerWrapper">
-            <img class="bottomFutProLogo" src="./assets/images/GlobalFutPro logo white.png" alt="">
+            <img class="bottomFutProLogo" src="./assets/images/footerIcons/GlobalFutProLogoWhite.png" alt="">
             <div class="footerSobre GlobalFutProWrapper">
                 <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
                 <ul class="footerList">
-                    <li>Quem Somos</li>
-                    <li>Regulamento</li>
-                    <li>Pagamentos</li>
+                    <a href=""><li>Quem Somos</li></a>
+                    <a href=""><li>Regulamento</li></a>
+                    <a href=""><li>Pagamentos</li></a>
                 </ul>
             </div>
 
@@ -408,25 +414,31 @@
                 </ul>
             </div>
             <div class="footerSponsorsLogoContainer">
-
+                <img  class="liveArenaFooter" src="./assets/images/footerIcons/liveArena.png" alt="">  
+                <div class="footerSponsorsWrapper">
+                    <img class="inovaSportsFooter" src="./assets/images/footerIcons/InovaSports.png" alt="">
+                    <img class="xtremeFooter" src="./assets/images/footerIcons/xtreme.png" alt="">
+                </div>                             
+                <div class="footerSponsorsWrapperLast">
+                    <img class="futpressFooter" src="./assets/images/footerIcons/7 - logo17.png" alt="">
+                    <img class="aceCampusFooter" src="./assets/images/footerIcons/aceCampus.png" alt=""> 
+                </div>
             </div>
-        </div>
-        <hr>
+        </div> 
+        <hr class="footerHr">
         <div class="copyrightWrapper">
             <p>Copyright © 2019 GLOBALFUTPRO</p>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
+    <script src="./assets/js/formValidation.js"></script>
+
+    <!--bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

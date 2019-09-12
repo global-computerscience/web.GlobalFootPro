@@ -25,6 +25,33 @@ img{
 
 }
 
+.socialNetworkIcon{
+    margin-top: 45px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.input-group>.form-control{
+    width: 0 !important;
+}
+
+.was-validated .form-control:valid, .was-validated .form-control:invalid{
+    background-image: none;
+}
+
+.input-group-text {
+    width: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #E0E0E0;
+    height: 100%;
+}
+
 .flexWrapper{
     display: flex;
     align-items: center;
@@ -60,7 +87,7 @@ img{
     align-items: center;
 }
 
-#xboxLogoDiv {
+.xboxLogoDiv {
     display: flex;
     align-items: center;
     padding:0 10px;
@@ -74,7 +101,7 @@ img{
 
 }
 
-#ps4LogoDiv {
+.ps4LogoDiv {
     display: flex;
     align-items: center;
     padding:0 10px;
@@ -87,6 +114,9 @@ img{
     height: 14px;
 }
 
+.withoutColor{
+    background: none;
+}
 
 
 .rightSideOptions {
@@ -204,7 +234,7 @@ img{
     .navLink:hover,
     .nav-link:active,
     .nav-link:focus {
-        color: gray !important;
+    color: gray !important;
     }
 
 }
@@ -234,7 +264,7 @@ img{
     justify-content: space-between;
     width: 1200;
     height: 480px;
-    background: url(../images/background\ image.png);
+    background: url(../images/index/backgroundImage.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,29 +435,36 @@ img{
 }
 
 .inscrevaSe{
-    height: 48px;
+    height: 40px;
     width: 180px;
-    margin-top: 30px;
+    margin-top: 35px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .sponsorsContainer{
     display: flex;
     justify-content: space-between;
+
 }
 
 .sponsorsLogos{
    display: flex;
    margin-top:30px;
+   align-items: center;
 }
 
 .aceCampus{
-    height: 50px;   
+    height: 40px;   
     padding: 0 10px;
 }
 
+.futpress{
+    height: 40px
+}
+
 .liveArena{
-    height: 30px;
+    height: 50px;
 }
 
 .confrontos{
@@ -446,7 +483,7 @@ img{
 
 
 .confrontosImageContainer{
-    background-image: url(../images/confrontosImage.jpeg);
+    background-image: url(../images/index/confrontosImage.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -564,6 +601,7 @@ img{
 .participateIcon{
     width: 50px;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .participateNumber{
@@ -578,6 +616,12 @@ img{
     flex-direction: column;
     align-items: center;
     justify-items: center;
+}
+
+.campeonatoStatus{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 .participateDescription, .participateDescriptionBold{
@@ -649,7 +693,7 @@ img{
     align-items: center;
     justify-content: center;
     height: 360px;
-    background-image: url(../images/TaçaAzulBg.png);
+    background-image: url(../images/index/TaçaAzulBg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -750,28 +794,28 @@ img{
 }
 
 .cardDestaque1{
-    background-image: url(../images/Bottom\ card\ ps4\ \ Woman.jpg);
+    background-image: url(../images/index/BottomCardPs4Woman.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .cardDestaque2{
-    background-image: url(../images/Bottom\ card\ ps4\ nike.jpg);
+    background-image: url(../images/index/BottomCardPs4Nike.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .cardDestaque3{
-    background-image: url(../images/Bottom\ card\ ps4\ Goalkeeper.jpg);
+    background-image: url(../images/index/BottomCardPs4Goalkeeper.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .cardDestaque4{
-    background-image: url(../images/Bottom\ card\ ps4\ Football\ shoes.jpg);
+    background-image: url(../images/index/BottomCardPs4FootballShoes.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -829,12 +873,21 @@ img{
 }
 
 .socialMediaIconsContainer{
-    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
     width: 1000px;
+    padding:20px 400px;
+    padding-bottom: 30px;
+    
+
+}
+
+.socialMediaIconsContainer a{
+    height: 50px;
 }
 
 .footerContainer{
-
     width: 100%;
     height: 400px;
     background: #031A28;
@@ -872,7 +925,52 @@ img{
     line-height: 35px;
 }
 .footerSponsorsLogoContainer{
-    width: 230px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerSponsorsWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.footerSponsorsWrapperLast{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.liveArenaFooter{
+    width: 164px;
+}
+
+.inovaSportsFooter{
+    width: 100px;
+}
+
+.xtremeFooter{
+    width: 60px;
+}
+
+.futpressFooter{
+    width: 90px;
+    height: 40px;
+}
+
+.aceCampusFooter{
+    width: 70px;
+}
+
+.footerHr{
+    width: 1200px;
+    border: 0.5px solid rgb(214, 212, 212);
+    opacity: 0.1;
 }
 
 .copyrightWrapper p{
@@ -894,11 +992,23 @@ img{
     align-items: center;
 }
 
+.signUpMainContentWrapper{
+    width: 1100px;
+    height: auto;
+    background-image: url(/assets/images/signUp/footballPlayerSignUp.jpg);
+    background-repeat: no-repeat;
+    background-size: 490px;
+    background-position: 600px 100px;
+    overflow: visible;
+}
+
 .crieSuaContaTitleContainer{
     margin-top: 50px;
     width: 1000px;
 }
-
+.footballPlayerCadastro{
+    position: relative;
+}
 .crieSuaConta{
     font-weight: 600;
     font-size: 36px;
@@ -914,13 +1024,9 @@ img{
     margin-top: 20px;
 }
 
-.informacoesPessoais{
-    font-weight: 600;
-    font-size: 24px;
-}
-
 .profilePhotoContainer{
     display: flex;
+    margin-top: 20px;
 }
 
 .profilePhotoWrapper{
@@ -930,12 +1036,12 @@ img{
     border-radius: 100%;
 }
 
-.input{
+.input, .input:focus{
     background: #E0E0E0;
     border-radius: 2px;
     height: 40px;
     border-style:solid;
-    border: none;
+    border: 1px solid transparent;
     padding-left: 10px; 
 }
 
@@ -957,6 +1063,10 @@ img{
     margin-left: 10px;
 }
 
+.selecioneImagemWrapper{
+    display: flex;
+}
+
 .selecioneImagemInput{
     width: 590px;
 }
@@ -964,7 +1074,7 @@ img{
 .procurar{
     position: relative;
     width: 110px;
-    left: -115px;
+    left: -110px;
 }
 
 .NomeCompleto{
@@ -979,20 +1089,42 @@ img{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 660px;
+    width: 720px;
+}
+
+.warningWrapper{
+    display: flex;
+    height: 30px;
 }
 
 .cpfInput{
-    width: 320px;
+    width: 310px;
 }
 
-.generoInput{
+.generoSelect{
     width: 150px;
+}
+
+.dataNascInputWrapper{
+    display: flex;
+}
+
+.dataNascIcon{
+    position: relative;
+    left: -60px;
+    top: 22px;
+    height: 30px;
 }
 
 .dataNascInput{
-    width: 150px;
+    width: 160px;
 } 
+
+.birthDayDateICon{
+    position: relative;
+    margin-left: -60px;
+    margin-top: 15px;
+}
 
 .email, .confirmarEmail{
     margin-top: 30px;
@@ -1007,12 +1139,12 @@ img{
 }
 
 .telefoneCelularWrapper{
-    width: 320px;
+    width: 340px;
     display: flex;
     justify-content: space-between;
 }
 .dddInput{
-    width:60px;
+    width:80px;
 }
 
 .numeroInput{
@@ -1025,9 +1157,8 @@ img{
     width: 1000px;
 }
 
-.enderecoTitle{
-    font-size: 24px;
-    font-weight: 600;
+.cepWrapper{
+    display: flex;
 }
 
 .cep{
@@ -1036,6 +1167,13 @@ img{
 
 .cepInput{
     width: 320px;
+}
+
+.cepIcon{
+    position: relative;
+    top: 42px;
+    left: -35px;
+    height: 30px;
 }
 
 .enderecoWrapper{
@@ -1047,6 +1185,10 @@ img{
 
 .enderecoInput{
     width: 830px;
+}
+
+.inputDisabledDarker:disabled{
+    background: #828282;
 }
 
 .numeroCasaInput{
@@ -1069,11 +1211,7 @@ img{
 
 .redesSociaisContainer{
     margin-top: 40px;
-}
-
-.redesSociaisTitle{
-    font-size: 24px;
-    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .redeSociaisLabel{
@@ -1105,15 +1243,50 @@ img{
     line-height: 2px;
 }
 
+.digiteSuaSenhaWrapper{
+    display: flex;
+}
+
+.passwordEyeIcon{
+    height: 30px;
+    position: relative;
+    top: 41px;
+    right: 40px;
+}
+
+.confirmPasswordEyeIcon{
+    height: 30px;
+    position: relative;
+    top: 51px;
+    right: 40px;
+}
+
 .confirmeASenhaLabel{
     margin-top: 30px;
 }
 
+.segurancaContainer hr{
+    margin-top: 40px;
+}
+
+.segurancaContainer button{
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .liEConcordoContainer{
-    margin-top: 80px;
+    margin-top: 40px;
+    height: 20px;
 }
 .liEConcordoContainer{
-    font-size: 18px
+    font-size: 18px;
+    font-weight: 600
+}
+
+.greenTextLink{
+    color: #1DA775;
+    text-decoration: underline;
 }
 
 
@@ -1135,7 +1308,8 @@ img{
 .loginContainer{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .loginWrapper{
@@ -1147,34 +1321,57 @@ img{
 
 .loginTitle{
     width: 100%;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     font-size: 36px;
     font-weight: 600;
 }
 
-.userLoginInput{
+.userLoginInput, .userLoginInput:focus{
     width: 360px;
     height: 60px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    margin-bottom: 20px;
+    padding-left: 45px;
 }
 
-.passwordLoginInput{
+.loginUserInputIcon{
+    position: relative;
+    top: 50px;
+    left: 12px;
+}
+
+.liginPasswordInputWrapper{
+    display: flex;
+}
+
+.passwordLoginInput, .passwordLoginInput:focus{
     width: 360px;
     height: 60px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    margin-bottom: 20px;
+    padding-left: 45px;
+    margin-top: -15px;
+}   
+
+.loginPasswordInputIcon{
+    position: relative;
+    top: 35px;
+    left: 12px;
 }
+
+.loginPasswordInputEyeIcon{
+    position: relative;
+    top:35px;
+    left: 290px;
+}
+
 
 .loginButton{
     width: 100%;
     height: 48px;
     font-weight: 500;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .loginHr{
@@ -1419,7 +1616,7 @@ img{
 
 .createYouPlayerTopImage{
     width: 634px;
-    height: 434px;
+    margin-top: 20px;
 }
 
 .dadosDoJogadorLabel{
@@ -1428,6 +1625,7 @@ img{
 
 .seuNomeNaPlataformaInput{
     width: 660px;
+
 }
 
 .createYourPlayerPSNinputWrapper{
@@ -1499,6 +1697,12 @@ img{
 
 #goleiro{
     grid-area: goleiro;
+    height: 70px;
+    width:203px;
+}
+
+.invalidFeedBackMarginCorrection{
+    margin-top: 0;
 }
 
 #lateralDireito{
@@ -1607,4 +1811,118 @@ img{
 
 .createYourPlayerCriarJogadorButton:disabled{
     opacity: 0.3;
+}
+
+
+/* PÁGINA WELCOMEPAGE --------------------------------------------------------------------------------------------*/
+
+.welcomePageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.welcomePageWrapper{
+    width: 1000px;
+}
+
+.bemVindoAoGlobal{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.enviamosUmEmail{
+    width: 900px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.confiraSeuPerfil{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.welcomePageProfileContainer{
+    height: 440px;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 40px;
+}
+
+.mainProfileInfos{
+    height: 210px;
+    display: flex;
+  
+}
+
+.welcomePageProfilePhotoContainer{
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.WelcomePageProfilePhoto{
+    height: 210px;
+
+}
+
+.welcomePageProfileInfosContainer{
+    width: 75%;
+    padding: 20px;
+    font-size: 18px;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.welcomePageProfileInfosContainer p{
+    display: flex;
+}
+
+.welcomePageProfileInfosContainer p img{
+    margin-right: 15px;
+}
+
+.welcomePageProfileName{
+    font-size: 30px;
+    font-weight: 500;
+    width:700px;
+    
+}
+
+.welcomePageProfileFirstInfosContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.welcomePageProfileAdressContainer{
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 18px;
+    padding: 30px;
+    line-height: 14px;
+    height: 135px;
+}
+
+.welcomePageProfileSocialNetworksContainer{
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.socialNetworksRoundGreenContainers{
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #1DA775;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.welcomePageSociaNetworkIcon{
+    height: 35px;
 }
