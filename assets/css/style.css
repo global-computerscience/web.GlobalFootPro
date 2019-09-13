@@ -276,7 +276,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-items: center;
     align-items: center;
-    widows: 1300px;
+    width: 1300px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,19 +292,21 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     color: white;
     line-height: 20px;
+    padding-left: 5px;
 }
 
 #proClubs {
     font-size: 76px;
     font-weight: 600;
     color: white;
-    line-height: 60px
+    line-height: 60px;
 }
 
 .fifaLogo {
     margin-top: 15px;
     margin-bottom: 60px;
     width: 140px;
+    padding-left: 5px;
 }
 
 #xboxHero {
@@ -344,6 +346,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 950px;
     margin: auto;
 }
+
+
+
+
 
 .posHeroContainer {
     padding: 0 110px;
@@ -481,6 +487,107 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 20px;
 }
 
+@media (max-width:1350px){
+    .heroContainer{
+        height: 35vw;
+        min-height: 400px;
+    }
+
+    .contentContainer{
+        padding-left: 5%;
+        height: 25vw;
+        width: 90vw;
+        min-height: 270px;
+    }
+
+    .footballPlayers{
+        width: 50vw;
+        height: auto;
+        margin-top: 15vw;
+    }
+
+    .fifaLogo{
+        width: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    .textPresentation{
+        width: 40vw;
+        min-width: 400px;
+    }
+
+    #aSuaComunidade{
+        font-size: 160%;
+        
+    }
+
+    #proClubs{
+        font-size: 70px;
+        line-height: 50%;
+    }
+
+    .bottomTextHeroContainer{
+        padding: 0 1%;
+    }
+
+    .bottomTextHeroWrapper{
+        width: 90%;
+        min-width: 400px;
+    }
+
+    .maiorCamp{
+        font-size: 24px;
+    }
+
+    .posHeroContainer{
+        padding: 0 5%;
+    }
+    .posHeroWrapper{
+        width: 80vw;
+    }
+    .aboutProClubsContainer{
+        width: 80vw;
+    }
+
+    .globalFutLogo{
+       height: 30vw;
+    }
+    .sponsorsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutProClubs{
+        padding: 0;
+        margin: auto;
+    }
+
+    .campeonatoPresencial{
+        font-size: 20px;
+    }
+
+    @media (max-width:1000px){  
+        .footballPlayers{
+            display: none;
+        }
+        .bottomTextHero{
+            font-size: 3vw
+        }
+
+        .bottomTextHeroWrapper{
+            display: flex;
+            align-items: center;
+        }
+        .globalFutLogo{
+            display: none;
+         }
+
+         .maiorCamp{
+             width: 350px;
+         }
+    }
+}
 
 .confrontosImageContainer{
     background-image: url(../images/index/confrontosImage.png);
@@ -995,7 +1102,7 @@ input[type=number]::-webkit-outer-spin-button {
 .signUpMainContentWrapper{
     width: 1100px;
     height: auto;
-    background-image: url(/assets/images/signUp/footballPlayerSignUp.jpg);
+    background-image: url(../images/signUp/footballPlayerSignUp.jpg);
     background-repeat: no-repeat;
     background-size: 490px;
     background-position: 600px 100px;
@@ -1013,6 +1120,17 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     font-size: 36px;
     line-height: 42px;
+}
+
+.idiomaWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 720px;
+}
+
+.idiomaSelect {
+    width: 200px;
 }
 
 .preenchaOsDados{
@@ -1430,7 +1548,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     width: 100%;
     height: 300px;
-    background-image: url(../images/equipesHeroImage.jpeg);
+    background-image: url(../images/teamPage/teamHeroImage.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1483,11 +1601,81 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;  
     width: 320px;
     height: 360px;
-    padding: 20px 40px;
+    padding: 0 40px;
+    padding-top: 20px;
+    border: 1px solid #E0E0E0;
+}
+
+.teamInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+
+.top3InfoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.infoNumber{
+    font-size: 26px;
+    color: white;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.teamsDescriptionText{
+    font-size: 12px;
+    line-height: 0;
+    font-weight: 600;
+}
+
+.teamsUserInfoContainer{
+    position: relative;
+    height: 60px;
+    width: 318px;
+    background-color: #ffffff;
+    margin-top: 3px;
+}
+
+.top3usericon{
+    width: 100%;
+    height: auto;
+}
+.teamsUserInfoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.teamsUserProfilePhoto{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #107C11;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.teamsUserName{
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 .teamsFirstPlace{
     background-color: #D2BA7E;
+}
+
+.teamsSecondPlace{
+    background-color: #CC9C91;
+}
+
+.teamsThirdPlace{
+    background-color: #9C91A7;
 }
 
 .rankPositionAndNameWrapper{
@@ -1525,8 +1713,64 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
 }
 
-
 /* PÁGINA CRIE SEU JOGADOR --------------------------------------------------------------------------------------------*/
+
+.navbarProfileOptionsContainer{
+    display: flex;
+}
+
+.navBarProfileDropdownContainer{
+    display: flex;
+    align-items: center;
+}
+
+.profileDropdown{
+    background-color: #0C2737;
+    border:none;
+}
+
+.show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow: none;
+    transition: none;
+    border: none;
+}
+
+.btn-secondary:hover{
+    border: none;
+    
+}
+
+
+.profileDropdown:hover{
+    background: #0C2737;
+}
+
+.profileDropdown:{
+    border: none;
+}
+
+
+
+.dropdown-toggle::after{
+    color: #1DA775
+}
+
+.show > .btn-secondary.dropdown-toggle, .show > .btn-secondary.dropdown-toggle:hover{
+    background: none;
+    border: none;
+
+}
+.navbarProfilePhotoContainer{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden
+}
+
+.navbarProfilePhoto{
+    width: 100%;
+    height: auto;
+}
 
 .createYOurPlayerConatainer{
     width: 100%;
@@ -1656,9 +1900,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 20px;
 }
 
-.mesmaPosicaoTodasPlataformasPrimaria, .mesmoNumeroENomeTodasPlataformas, .mesmaPosicaoTodasPlataformasSecundaria{
-
-}
  
 /* RADIO BUTTONS STYLE START ----------------------------------------------------*/
 
