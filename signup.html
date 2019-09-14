@@ -37,6 +37,10 @@
         data=data.replace(/(\d{2})(\d{2})(\d{4})/g,"\$1/\$2/\$3")
         return data
     }
+    function cep(cep){
+        return cep.replace(/(\d{5})(\d{3})/g,"\$1-\$2")
+        
+    }
 </script>
 
    <!-- BEGIN OF OPTIONS NAVBAR -->
@@ -235,7 +239,7 @@
                     <div class="cepWrapper">
                         <div class="wrapper">
                             <p class="label cep">CEP *</p>
-                            <input class="input cepInput form-control" type="text" required>
+                            <input class="input cepInput form-control" type="text" onkeydown="javascript: fMasc( this, cep );" required>
                             <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                         <img class="cepIcon" src="./assets/images/signUp/form-search.svg" alt="">
