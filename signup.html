@@ -20,7 +20,24 @@
 </head>
 
 <body>
-
+<script>
+    function fMasc(objeto,mascara) {
+        obj=objeto
+        masc=mascara
+        setTimeout("fMascEx()",1)
+    }
+    function fMascEx() {
+        obj.value=masc(obj.value)
+    }
+    function mCPF(cpf){
+        cpf=cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4")
+        return cpf
+    }
+    function birthday(data){
+        data=data.replace(/(\d{2})(\d{2})(\d{4})/g,"\$1/\$2/\$3")
+        return data
+    }
+</script>
 
    <!-- BEGIN OF OPTIONS NAVBAR -->
  <nav class="navbarWrapper">
@@ -140,9 +157,10 @@
                         <div class="selecionePhotoContainer">
                             <p class="label imagemDePerfil">Imagem de Perfil *</p>
                             <div class="selecioneImagemWrapper">
-                                <input class="input selecioneImagemInput form-control" type="text"
+                                <input type="file" style="display: none" id="inputfile"/>
+                                <input id="profile-img" class="input selecioneImagemInput form-control" type="text"
                                     placeholder="Selecionar imagem em seu computador" required>
-                                <button class="mainGreenButton procurar">PROCURAR</button>
+                                <button class="mainGreenButton procurar" id="search-img" >PROCURAR</button>
                             </div>
                         </div>
                         <div class="invalid-feedback">Preencha o campo corretamente.</div>
@@ -155,7 +173,7 @@
                     <div class="cpfGeneroNascWrapper">
                         <div class="cpfInputWrapper">
                             <p class="label cpf">CPF *</p>
-                            <input class="input cpfInput form-control" type="number" placeholder="Somente números" required>
+                            <input class="input cpfInput form-control" type="text" placeholder="Somente números" onkeydown="javascript: fMasc( this, mCPF );" required>
                             <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                         <div class="generoInputWrapper">
@@ -170,7 +188,7 @@
                         <div class="dataNascInputWrapper">
                             <div class="wrapper">
                                 <p class="label dataNasc">Data Nascimento *</p>
-                                <input class="input dataNascInput form-control" type="text" placeholder="DD/MM/AAAA" required>
+                                <input class="input dataNascInput form-control" type="text" onkeydown="javascript: fMasc( this, birthday );" placeholder="DD/MM/AAAA" required>
                                 <div class="invalid-feedback">Campo invélido.</div>
                             </div>
                         </div>
@@ -343,7 +361,7 @@
                         <div class="digiteSuaSenhaWrapper">
                             <div class="wrapper">
                                 <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
-                                <input type="password" class="input senhaInput form-control" required>
+                                <input id="senha" type="password" class="input senhaInput form-control" required>
                                 <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1
                                     número e 1 caractere</p>
                                 <p class="instrucoesSenha">especial.</p>
@@ -353,7 +371,7 @@
                         <div class="digiteSuaSenhaWrapper">
                             <div class="wrapper">
                                 <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
-                                <input type="password" class="input senhaInput form-control" required>
+                                <input id="confirmsenha" type="password" class="input senhaInput form-control" required>
                                 <div class="invalid-feedback">Preencha o campo corretamente.</div>
                             </div>
                             <img class="confirmPasswordEyeIcon" src="./assets/images/signUp/form-eye-off.svg" alt="">
@@ -437,7 +455,7 @@
 
     <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
     <script src="./assets/js/formValidation.js"></script>
-    <script src="./assets//js/utilities.js"></script>
+    <script src="./assets//js/formUtilieties.js"></script>
     <!--bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
