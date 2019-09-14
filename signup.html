@@ -11,106 +11,133 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- start Mixpanel --><script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+    0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+    for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+    MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+    mixpanel.init("7fb58ea91eee24f966cbf8a7f3127e5f");</script><!-- end Mixpanel -->
 </head>
 </head>
 
 <body>
+<script>
+    function fMasc(objeto,mascara) {
+        obj=objeto
+        masc=mascara
+        setTimeout("fMascEx()",1)
+    }
+    function fMascEx() {
+        obj.value=masc(obj.value)
+    }
+    function mCPF(cpf){
+        cpf=cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4")
+        return cpf
+    }
+    function birthday(data){
+        data=data.replace(/(\d{2})(\d{2})(\d{4})/g,"\$1/\$2/\$3")
+        return data
+    }
+    function cep(cep){
+        return cep.replace(/(\d{5})(\d{3})/g,"\$1-\$2")
+        
+    }
+</script>
 
+   <!-- BEGIN OF OPTIONS NAVBAR -->
+ <nav class="navbarWrapper">
 
-    <!-- BEGIN OF OPTIONS NAVBAR -->
-    <nav class="navbarWrapper">
-
-        <nav class="navBackground">
-            <nav class="optionsBarCore">
-                <div class="consoleOption">
-                    <div class="xboxLogoDiv withoutColor">
-                        <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
-                    </div>
-                    <div class="ps4LogoDiv withoutColor">
-                        <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
-                    </div>
+    <nav class="navBackground">
+        <nav class="optionsBarCore">
+            <div class="consoleOption">
+                <div id="boxxbox" class="xboxLogoDiv ">
+                    <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
                 </div>
-                <div class="rightSideOptions">
-                    <div class="socialMidiaOptions">
-                        <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
-                        <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
-                        <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
-                    </div>
-                    <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
-    
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
-                        </button>
-                        
-                        <!--Code to add more Leagues on dropdown-->
-                        <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
-                                    src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
-                        </div> -->
-                    </div>
-    
-                    <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PT
-                        </button>
-                        
-                        <!-- Code to add more Language options on language dropdown-->
-                        <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item languageSelec" href="#">ENG</a>
-                        </div> -->
-                    </div>
-            </nav>
+                <div id="boxps4" class="ps4LogoDiv active ">
+                    <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
+                </div>
+            </div>
+            <div class="rightSideOptions">
+                <div class="socialMidiaOptions">
+                    <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
+                </div>
+                <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                    </button>
+                    
+                    <!--Code to add more Leagues on dropdown-->
+                    <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
+                    </div> -->
+                </div>
+
+                <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PT
+                    </button>
+                    
+                    <!-- Code to add more Language options on language dropdown-->
+                    <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item languageSelec" href="#">ENG</a>
+                    </div> -->
+                </div>
         </nav>
-    
-    
-        <!-- END OF OPTIONS NAVBAR -->
-    
-        <div class="mainNavbarBackground">
-            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
-                        src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-    
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CAMPEONATOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">EQUIPES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">RANKING</a>
-                        </li>
-    
-                    </ul>
-                </div>
-                <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
-            </nav>
-        </div>
     </nav>
+
+
+    <!-- END OF OPTIONS NAVBAR -->
+
+    <div class="mainNavbarBackground">
+        <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
+                    src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav mr-auto" style="display: none !important">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CAMPEONATOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">EQUIPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">RANKING</a>
+                    </li>
+
+                </ul>
+            </div>
+            <p><a href="./login.html" class="float-right white"><!--button class="mainGreenButton">LOGIN</button-->LOGIN</a></p>
+        </nav>
+    </div>
+</nav>
     <!-- END OF MAIN NAVBAR -->
+
 
     <!-- CRIESUACONTA START-->
     <div class="fixNavbarPosition"></div>
@@ -134,9 +161,10 @@
                         <div class="selecionePhotoContainer">
                             <p class="label imagemDePerfil">Imagem de Perfil *</p>
                             <div class="selecioneImagemWrapper">
-                                <input class="input selecioneImagemInput form-control" type="text"
+                                <input type="file" style="display: none" id="inputfile"/>
+                                <input id="profile-img" class="input selecioneImagemInput form-control" type="text"
                                     placeholder="Selecionar imagem em seu computador" required>
-                                <button class="mainGreenButton procurar">PROCURAR</button>
+                                <button class="mainGreenButton procurar" id="search-img" >PROCURAR</button>
                             </div>
                         </div>
                         <div class="invalid-feedback">Preencha o campo corretamente.</div>
@@ -149,7 +177,7 @@
                     <div class="cpfGeneroNascWrapper">
                         <div class="cpfInputWrapper">
                             <p class="label cpf">CPF *</p>
-                            <input class="input cpfInput form-control" type="number" placeholder="Somente números" required>
+                            <input class="input cpfInput form-control" type="text" placeholder="Somente números" onkeydown="javascript: fMasc( this, mCPF );" required>
                             <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                         <div class="generoInputWrapper">
@@ -164,20 +192,20 @@
                         <div class="dataNascInputWrapper">
                             <div class="wrapper">
                                 <p class="label dataNasc">Data Nascimento *</p>
-                                <input class="input dataNascInput form-control" type="text" placeholder="DD/MM/AAAA" required>
+                                <input class="input dataNascInput form-control" type="text" onkeydown="javascript: fMasc( this, birthday );" placeholder="DD/MM/AAAA" required>
                                 <div class="invalid-feedback">Campo invélido.</div>
                             </div>
                         </div>
-                        <img class="dataNascIcon" src="./assets/images/signUp/form-data.svg" alt="">
+                        <img class="dataNascIcon" src="/assets/images/signUp/form-data.svg" alt="">
 
                     </div>
       
                     <p class="label email">E-mail *</p>
-                    <input class="input emailInput form-control" type="email" required>
+                    <input id="email" class="input emailInput form-control" type="email" required>
                     <div class="invalid-feedback">Preencha o campo corretamente.</div>
 
                     <p class="label confirmarEmail">Confirmar E-mail *</p>
-                    <input class="input confirmarEmailInput form-control" type="email" required>
+                    <input id="confirmEmail" class="input confirmarEmailInput form-control" type="email" required>
                     <div class="invalid-feedback">Preencha o campo corretamente.</div>
 
 
@@ -192,13 +220,12 @@
                             <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                     </div>
-
-                    <div class="idiomaWrapper">
-                        <div class="idiomaSelectWrapper">
-                            <p class="label idioma">Idioma *</p>
-                            <select class="input idiomaSelect form-control" type="text" required>
-                                <option value="feminino">Português</option>
-                            </select>
+                    <div class="idiomaWrapper">                        
+                        <div class="idiomaSelectWrapper">                        	
+                            <p class="label idioma">Idioma *</p>                        	
+                            <select class="input idiomaSelect form-control" type="text" required>                        	
+                                <option value="feminino">Português</option>                        	
+                            </select>                        	
                         </div>
                     </div>
                 </div>
@@ -212,7 +239,7 @@
                     <div class="cepWrapper">
                         <div class="wrapper">
                             <p class="label cep">CEP *</p>
-                            <input class="input cepInput form-control" type="text" required>
+                            <input class="input cepInput form-control" type="text" onkeydown="javascript: fMasc( this, cep );" required>
                             <div class="invalid-feedback">Preencha o campo corretamente.</div>
                         </div>
                         <img class="cepIcon" src="./assets/images/signUp/form-search.svg" alt="">
@@ -338,7 +365,7 @@
                         <div class="digiteSuaSenhaWrapper">
                             <div class="wrapper">
                                 <p class="label crieUmaSenhaLabel">Crie uma senha. *</p>
-                                <input type="password" class="input senhaInput form-control" required>
+                                <input id="senha" type="password" class="input senhaInput form-control" required>
                                 <p class="instrucoesSenha">Mínimo de 8 caracteres. Utilize pelo menos 1 letra maiúscula, 1
                                     número e 1 caractere</p>
                                 <p class="instrucoesSenha">especial.</p>
@@ -348,7 +375,7 @@
                         <div class="digiteSuaSenhaWrapper">
                             <div class="wrapper">
                                 <p class="label confirmeASenhaLabel">Confirme a senha. *</p>
-                                <input type="password" class="input senhaInput form-control" required>
+                                <input id="confirmsenha" type="password" class="input senhaInput form-control" required>
                                 <div class="invalid-feedback">Preencha o campo corretamente.</div>
                             </div>
                             <img class="confirmPasswordEyeIcon" src="./assets/images/signUp/form-eye-off.svg" alt="">
@@ -366,7 +393,7 @@
                         <div class="createYourPlayerButtonsContainer">
                             <button class="createYourPlayerLimparDadosButton">LIMPAR DADOS</button>
                             <!--To enable this button just remove "disabled" propertie from button-->
-                            <button type="submit" class="createYourPlayerCriarJogadorButton">CRIAR CONTA</button>
+                            <button type="submit" id="criarconta" class="createYourPlayerCriarJogadorButton">CRIAR CONTA</button>
                         </div>
                     </div>
 
@@ -394,7 +421,7 @@
     <div class="footerContainer">
         <div class="footerWrapper">
             <img class="bottomFutProLogo" src="./assets/images/footerIcons/GlobalFutProLogoWhite.png" alt="">
-            <div class="footerSobre GlobalFutProWrapper">
+            <div class="footerSobre GlobalFutProWrapper" style="display: none;">
                 <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
                 <ul class="footerList">
                     <a href=""><li>Quem Somos</li></a>
@@ -432,7 +459,7 @@
 
     <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
     <script src="./assets/js/formValidation.js"></script>
-
+    <script src="./assets//js/formUtilieties.js"></script>
     <!--bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

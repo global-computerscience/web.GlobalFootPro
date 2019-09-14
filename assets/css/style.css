@@ -98,7 +98,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
     cursor: pointer;
 }
-
+.xboxLogoDiv.active{
+    background-color: green;
+}
 
 #xbox {
     height: 16px;
@@ -111,9 +113,11 @@ input[type=number]::-webkit-outer-spin-button {
     padding:0 10px;
     height: 100%;
     cursor: pointer;
+    
+}
+.ps4LogoDiv.active{
     background: #003791;
 }
-
 #ps4 {
     height: 14px;
 }
@@ -351,10 +355,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: auto;
 }
 
-
-
-
-
 .posHeroContainer {
     padding: 0 110px;
 }
@@ -490,109 +490,126 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #003791;
     padding-top: 20px;
 }
-
 @media (max-width:1350px){
-    .heroContainer{
-        height: 35vw;
-        min-height: 400px;
+	
+    .heroContainer{     
+        height: 35vw;     
+        min-height: 400px;     
     }
-
-    .contentContainer{
-        padding-left: 5%;
-        height: 25vw;
-        width: 90vw;
-        min-height: 270px;
+     
+    .contentContainer{     
+        padding-left: 5%;     
+        height: 25vw;     
+        width: 90vw;     
+        min-height: 270px;     
+    }     
+     
+    .footballPlayers{     
+        width: 50vw;     
+        height: auto;     
+        margin-top: 15vw;     
     }
-
-    .footballPlayers{
-        width: 50vw;
-        height: auto;
-        margin-top: 15vw;
+     
+     
+    .fifaLogo{     
+        width: 10vw;   
+        margin-bottom: 5vw;     
     }
-
-    .fifaLogo{
-        width: 10vw;
-        margin-bottom: 5vw;
+     
+     
+    .textPresentation{     
+        width: 40vw;     
+        min-width: 400px;     
     }
-
-    .textPresentation{
-        width: 40vw;
-        min-width: 400px;
+     
+     
+    #aSuaComunidade{     
+        font-size: 160%;     
     }
-
-    #aSuaComunidade{
-        font-size: 160%;
-        
+     
+     
+    #proClubs{     
+        font-size: 70px;     
+        line-height: 50%;     
     }
-
-    #proClubs{
-        font-size: 70px;
-        line-height: 50%;
+     
+     
+    .bottomTextHeroContainer{     
+        padding: 0 1%;     
     }
-
-    .bottomTextHeroContainer{
-        padding: 0 1%;
+     
+     
+    .bottomTextHeroWrapper{     
+        width: 90%;     
+        min-width: 400px;     
     }
-
-    .bottomTextHeroWrapper{
-        width: 90%;
-        min-width: 400px;
+     
+     
+    .maiorCamp{     
+        font-size: 24px;     
     }
-
-    .maiorCamp{
-        font-size: 24px;
+     
+     
+    .posHeroContainer{     
+        padding: 0 5%;     
     }
-
-    .posHeroContainer{
-        padding: 0 5%;
+     
+    .posHeroWrapper{     
+        width: 80vw;     
     }
-    .posHeroWrapper{
-        width: 80vw;
+     
+    .aboutProClubsContainer{     
+        width: 80vw;     
     }
-    .aboutProClubsContainer{
-        width: 80vw;
+     
+     
+    .globalFutLogo{     
+       height: 30vw;     
     }
-
-    .globalFutLogo{
-       height: 30vw;
+     
+    .sponsorsContainer{     
+        display: flex;     
+        flex-direction: column;     
+        align-items: center;     
     }
-    .sponsorsContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+     
+     
+    .aboutProClubs{     
+        padding: 0;     
+        margin: auto;     
     }
-
-    .aboutProClubs{
-        padding: 0;
-        margin: auto;
+     
+     
+    .campeonatoPresencial{     
+        font-size: 20px;     
     }
-
-    .campeonatoPresencial{
-        font-size: 20px;
-    }
-
-    @media (max-width:1000px){  
-        .footballPlayers{
-            display: none;
+     
+     
+    @media (max-width:1000px){       
+        .footballPlayers{     
+            display: none;     
+        }     
+        .bottomTextHero{     
+            font-size: 3vw;     
+        }    
+     
+        .bottomTextHeroWrapper{     
+            display: flex;     
+            align-items: center;     
         }
-        .bottomTextHero{
-            font-size: 3vw
-        }
-
-        .bottomTextHeroWrapper{
-            display: flex;
-            align-items: center;
-        }
-        .globalFutLogo{
-            display: none;
+     
+        .globalFutLogo{     
+            display: none;     
+         }     
+     
+         .maiorCamp{     
+             width: 350px;     
          }
-
-         .maiorCamp{
-             width: 350px;
-         }
+     
     }
-}
-
+     
+ }
+     
 .confrontosImageContainer{
     background-image: url(../images/index/confrontosImage.png);
     background-position: center center;
@@ -804,7 +821,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     height: 360px;
-    background-image: url(../images/index/TaçaAzulBg.png);
+    background-image: url(../images/index/TacaAzulBg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1117,6 +1134,19 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 50px;
     width: 1000px;
 }
+.idiomaWrapper{
+    display: flex;    	
+    justify-content: space-between;    
+    margin-top: 30px;    
+    width: 720px;    
+}
+
+    	
+.idiomaSelect {    
+    width: 200px;    
+}
+    	
+    
 .footballPlayerCadastro{
     position: relative;
 }
@@ -1124,17 +1154,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     font-size: 36px;
     line-height: 42px;
-}
-
-.idiomaWrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    width: 720px;
-}
-
-.idiomaSelect {
-    width: 200px;
 }
 
 .preenchaOsDados{
@@ -1605,82 +1624,85 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;  
     width: 320px;
     height: 360px;
-    padding: 0 40px;
-    padding-top: 20px;
+    padding: 20px 40px;
     border: 1px solid #E0E0E0;
 }
 
 .teamInfoContainer{
     display: flex;
     justify-content: space-between;
-    width: 270px;
-}
-
-.top3InfoContainer{
+    width: 270px;	
+ }
+     
+     
+ .top3InfoContainer{
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 60px;
     margin-top: 20px;
-}
-
-.infoNumber{
+ }
+     
+ .infoNumber{
     font-size: 26px;
     color: white;
     font-weight: 600;
     line-height: 20px;
-}
-
-.teamsDescriptionText{
+ }
+     
+ .teamsDescriptionText{
     font-size: 12px;
     line-height: 0;
     font-weight: 600;
-}
-
-.teamsUserInfoContainer{
+ }
+     
+ .teamsUserInfoContainer{
     position: relative;
     height: 60px;
     width: 318px;
     background-color: #ffffff;
     margin-top: 3px;
-}
-
-.top3usericon{
+ }
+     
+ .top3usericon{
     width: 100%;
     height: auto;
-}
-.teamsUserInfoContainer{
+ }
+ .teamsUserInfoContainer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 25px;
-}
-
-.teamsUserProfilePhoto{
+ 
+ }
+     
+ .teamsUserProfilePhoto{
     width: 30px;
     height: 30px;
     border-radius: 100%;
     background-color: transparent;
     margin-right: 10px;
     overflow: hidden;
-}
-
-.teamsUserName{
+ }
+     
+ .teamsUserName{
     margin-top: 15px;
     font-size: 14px;
     margin-bottom: 0;
 }
-
 .teamsFirstPlace{
     background-color: #D2BA7E;
 }
-
 .teamsSecondPlace{
     background-color: #CC9C91;
+    
 }
-
+    	
+    	
 .teamsThirdPlace{
+
     background-color: #9C91A7;
+    
 }
 
 .rankPositionAndNameWrapper{
@@ -1877,64 +1899,65 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* PÁGINA CRIE SEU JOGADOR --------------------------------------------------------------------------------------------*/
-
 .navbarProfileOptionsContainer{
     display: flex;
-}
-
-.navBarProfileDropdownContainer{
-    display: flex;
-    align-items: center;
-}
-
-.profileDropdown{
-    background-color: #0C2737;
-    border:none;
-}
-
-.show>.btn-secondary.dropdown-toggle:focus{
-    box-shadow: none;
-    transition: none;
+ }
+     
+ .navBarProfileDropdownContainer{
+    display: flex;	
+    align-items: center;	
+ }
+         
+ .profileDropdown{	
+    background-color: #0C2737;	
+    border:none;	
+ }
+     
+     
+ .show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow: none;	
+    transition: none;	
+    border: none;	
+ }
+         
+ .btn-secondary:hover{	
+    border: none;   
+     
+ }	
+     
+ .profileDropdown:hover{
+  background: #0C2737;
+     
+ }
+         
+ .profileDropdown{
     border: none;
-}
-
-.btn-secondary:hover{
-    border: none;
-    
-}
-
-
-.profileDropdown:hover{
-    background: #0C2737;
-}
-
-.profileDropdown:{
-    border: none;
-}
-
-
-
-.dropdown-toggle::after{
-    color: #1DA775
-}
-
-.show > .btn-secondary.dropdown-toggle, .show > .btn-secondary.dropdown-toggle:hover{
-    background: none;
-    border: none;
-
-}
-.navbarProfilePhotoContainer{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
+ }
+             
+ .dropdown-toggle::after{	
+    color: #1DA775	
+ }
+     
+     
+ .show > .btn-secondary.dropdown-toggle, .show > .btn-secondary.dropdown-toggle:hover{	
+    background: none;	
+    border: none;	
+ }
+     
+ .navbarProfilePhotoContainer{
+    width: 30px;	
+    height: 30px;	
+    border-radius: 100%;	
     overflow: hidden
-}
-
-.navbarProfilePhoto{
+ }
+ 
+ 
+ .navbarProfilePhoto{
     width: 100%;
     height: auto;
-}
-
+ }
+     
+ 
 .createYOurPlayerConatainer{
     width: 100%;
     display: flex;
@@ -2063,7 +2086,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 20px;
 }
 
- 
 /* RADIO BUTTONS STYLE START ----------------------------------------------------*/
 
 .crateYourPlayerRadioButttonsContainer{
@@ -2217,7 +2239,13 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0.3;
 }
 
-
+.white{
+    color: white;
+}
+.white:hover{
+    color: white;
+    text-decoration: underline;
+}
 /* PÁGINA WELCOMEPAGE --------------------------------------------------------------------------------------------*/
 
 .welcomePageContainer{
