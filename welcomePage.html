@@ -16,100 +16,101 @@
 
 <body>
 
-    <!-- BEGIN OF OPTIONS NAVBAR -->
-    <nav class="navbarWrapper">
+   <!-- BEGIN OF OPTIONS NAVBAR -->
+ <nav class="navbarWrapper">
 
-        <nav class="navBackground">
-            <nav class="optionsBarCore">
-                <div class="consoleOption">
-                    <div class="xboxLogoDiv withoutColor">
-                        <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
-                    </div>
-                    <div class="ps4LogoDiv withoutColor">
-                        <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
-                    </div>
+    <nav class="navBackground">
+        <nav class="optionsBarCore">
+            <div class="consoleOption">
+                <div id="boxxbox" class="xboxLogoDiv ">
+                    <img id="xbox" src="./assets/images/index/XBOX-logo.png" alt="">
                 </div>
-                <div class="rightSideOptions">
-                    <div class="socialMidiaOptions">
-                        <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
-                        <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
-                        <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
-                    </div>
-                    <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
-    
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
-                        </button>
-                        
-                        <!--Code to add more Leagues on dropdown-->
-                        <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
-                                    src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
-                        </div> -->
-                    </div>
-    
-                    <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PT
-                        </button>
-                        
-                        <!-- Code to add more Language options on language dropdown-->
-                        <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item languageSelec" href="#">ENG</a>
-                        </div> -->
-                    </div>
-            </nav>
+                <div id="boxps4" class="ps4LogoDiv active ">
+                    <img id="ps4" src="./assets/images/index/PS4-logo.png" alt="ps4-logo">
+                </div>
+            </div>
+            <div class="rightSideOptions">
+                <div class="socialMidiaOptions">
+                    <a href=""><img src="./assets/images/navBarIcons/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/instagram-logo.svg" alt="instagram-logo"></a>
+                    <a href=""><img src="./assets/images/navBarIcons/youtube.svg" alt="youtube-logo"></a>
+                </div>
+                <img class="greenCircleSeparator1" src="./assets/images/navBarIcons/greenCircle.png" alt="separator">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle flagSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="selectFlag" src="./assets/images/navBarIcons/Brazil_Logo.png" alt=""> LIGA BRASILEIRA
+                    </button>
+                    
+                    <!--Code to add more Leagues on dropdown-->
+                    <!-- <div class="dropdown-menu superior" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item flagSelec" href="#"><img class="selectFlag"
+                                src="./assets/images/italyIcon.png" alt=""> LIGA ITALIANA</a>
+                    </div> -->
+                </div>
+
+                <img class="greenCircleSeparator2" src="./assets/images/navBarIcons/greenCircle.png" alt="">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle languageSelect" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PT
+                    </button>
+                    
+                    <!-- Code to add more Language options on language dropdown-->
+                    <!-- <div class="dropdown-menu superior" id="languageItem" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item languageSelec" href="#">ENG</a>
+                    </div> -->
+                </div>
         </nav>
-    
-    
-        <!-- END OF OPTIONS NAVBAR -->
-    
-        <div class="mainNavbarBackground">
-            <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
-                        src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-    
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CAMPEONATOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">CONFRONTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">EQUIPES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="#">RANKING</a>
-                        </li>
-    
-                    </ul>
-                </div>
-                <a href="./login.html"><button class="mainGreenButton">LOGIN</button></a>
-            </nav>
-        </div>
     </nav>
+
+
+    <!-- END OF OPTIONS NAVBAR -->
+
+    <div class="mainNavbarBackground">
+        <nav class="mainNavbar navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html"><img class="navbarLogo"
+                    src="./assets/images/navBarIcons/GlobalFutProLogoWhite.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav mr-auto" style="display: none !important">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CAMPEONATOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">CONFRONTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">EQUIPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="#">RANKING</a>
+                    </li>
+
+                </ul>
+            </div>
+            <p><a href="./login.html" class="float-right white"><!--button class="mainGreenButton">LOGIN</button-->LOGIN</a></p>
+        </nav>
+    </div>
+</nav>
     <!-- END OF MAIN NAVBAR -->
+
 
     <div class="fixNavbarPosition"></div>
     <div class="welcomePageContainer">
@@ -169,7 +170,7 @@
     <div class="footerContainer">
         <div class="footerWrapper">
             <img class="bottomFutProLogo" src="./assets/images/footerIcons/GlobalFutProLogoWhite.png" alt="">
-            <div class="footerSobre GlobalFutProWrapper">
+            <div class="footerSobre GlobalFutProWrapper" style="display: none;">
                 <p class="footerTitle">SOBRE A GLOBALFUTPRO</p>
                 <ul class="footerList">
                     <a href=""><li>Quem Somos</li></a>
@@ -207,7 +208,7 @@
 
     <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
     <script src="./assets/js/formValidation.js"></script>
-
+    <script src="./assets//js/utilities.js"></script>
     <!--bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
