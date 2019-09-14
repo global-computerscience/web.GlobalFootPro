@@ -436,7 +436,14 @@
         </div>
     </div>
 
-
+    <script>
+        document.getElementById("cadastro1").addEventListener("click", function(){ 
+        mixpanel.track("Click Cadastrar1 Home");
+        }); 
+        document.getElementById("cadastro2").addEventListener("click", function(){ 
+            mixpanel.track("Click Cadastrar2 Home");
+        }); 
+    </script>
     <!--this script is reponsible for form validation and warnig message. To put it in your form, use the "needs-validation" class and "form-control" class in each input/ -->
     <script src="./assets/js/formValidation.js"></script>
     <script src="./assets//js/utilities.js"></script>

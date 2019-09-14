@@ -18,15 +18,15 @@ document.getElementById("inputfile").addEventListener('change', function(){
     typingTimer = setTimeout(doneTyping, doneTypingInterval);
   });
   function doneTyping () {
-    var senha =document.getElementById("senha");
-    var confirm = document.getElementById("confirmsenha");
+    var senha =document.getElementById("senha").value;
+    var confirm = document.getElementById("confirmsenha").value;
     if(senha != confirm){
         alert("As senhas não correspondem")
     }
   }
   function doneTypingEmail(){
-    var email =document.getElementById("email");
-    var confirm =document.getElementById("confirmEmail");
+    var email =document.getElementById("email").value;
+    var confirm =document.getElementById("confirmEmail").value;
     if(email != confirm){
         alert("Os emails não correspondem")
     }
