@@ -1624,7 +1624,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;  
     width: 320px;
     height: 360px;
-    padding: 20px 40px;
+    padding: 20px 40px 0px 40px;
     border: 1px solid #E0E0E0;
 }
 
@@ -1686,7 +1686,6 @@ input[type=number]::-webkit-outer-spin-button {
  }
      
  .teamsUserName{
-    margin-top: 15px;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -1697,12 +1696,9 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #CC9C91;
     
 }
-    	
-    	
-.teamsThirdPlace{
 
-    background-color: #9C91A7;
-    
+.teamsThirdPlace{
+    background-color: #9C91A7;    
 }
 
 .rankPositionAndNameWrapper{
@@ -1742,8 +1738,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .rankingListWrapper {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin: 20px 0;
+   margin: 20px 0 0;
 }
 
 .rankingListContainer {
@@ -1896,6 +1894,26 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 10px;
     position: relative;
     top: 1px;
+}
+
+.btn {
+    align-items: center;
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    height: 36px;
+    justify-content: center;
+    margin: 20px;
+    width: 200px;
+}
+
+.btn-load-more, .btn-load-more:hover {
+    border: 2px solid #1DA775;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #1DA775;
+    outline: none;
 }
 
 /* PÁGINA CRIE SEU JOGADOR --------------------------------------------------------------------------------------------*/
